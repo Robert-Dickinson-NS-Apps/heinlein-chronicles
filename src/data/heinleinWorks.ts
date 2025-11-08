@@ -33,7 +33,7 @@ export const heinleinWorks: Work[] = [
     year: 1939,
     type: 'novel',
     summary: 'A man from 1939 wakes up in the year 2086 and explores a utopian society based on social credit economics. Published posthumously in 2003.',
-    themes: ['Social Credit', 'Economics', 'Utopia', 'Time Travel'],
+    themes: ['Time Travel', 'Politics & Government', 'Economics', 'Utopian Society'],
     wordCount: 90000,
     characters: [
       { name: 'Perry Nelson', description: 'Man from 1939 transported to future' },
@@ -46,7 +46,7 @@ export const heinleinWorks: Work[] = [
     year: 1947,
     type: 'novel',
     summary: 'Three teenage boys and a scientist travel to the Moon in a privately built rocket ship, where they discover evidence of Nazi survivors plotting a new war.',
-    themes: ['Space Exploration', 'Adventure', 'Youth Empowerment'],
+    themes: ['Space Exploration', 'Coming of Age', 'Adventure'],
     wordCount: 60000,
     characters: [
       { name: 'Ross Jenkins', description: 'Intelligent and determined teenager, natural leader of the group' },
@@ -61,6 +61,8 @@ export const heinleinWorks: Work[] = [
     year: 1948,
     type: 'novel',
     summary: 'Matt Dodson joins the Space Patrol Academy and undergoes rigorous training to become a guardian of peace in the Solar System, facing challenges that test his courage and principles.',
+    themes: ['Military & War', 'Coming of Age', 'Space Exploration', 'Duty'],
+    wordCount: 65000,
     characters: [
       { name: 'Matt Dodson', description: 'Idealistic young cadet from Iowa, protagonist of the story' },
       { name: 'Tex Jarman', description: 'Matt\'s roommate, a Texan with traditional values' },
@@ -74,6 +76,8 @@ export const heinleinWorks: Work[] = [
     year: 1949,
     type: 'novel',
     summary: 'Two boys attending boarding school on Mars discover a conspiracy that threatens the colony and must rely on their Martian friend, a native creature, to warn Earth.',
+    themes: ['Alien Contact', 'Coming of Age', 'Revolution', 'Space Exploration'],
+    wordCount: 55000,
     characters: [
       { name: 'Jim Marlowe', description: 'Resourceful teenager living on Mars' },
       { name: 'Frank Sutton', description: 'Jim\'s best friend and fellow student' },
@@ -87,7 +91,7 @@ export const heinleinWorks: Work[] = [
     year: 1948,
     type: 'novel',
     summary: 'In a genetically-engineered utopia, a man questions the purpose of perfection and explores themes of eugenics and individual freedom.',
-    themes: ['Genetics', 'Eugenics', 'Utopia', 'Individual Freedom'],
+    themes: ['AI & Technology', 'Individual Freedom', 'Utopian Society', 'Ethics'],
     wordCount: 75000,
     characters: [
       { name: 'Hamilton Felix', description: 'Genetically superior man who questions society' },
@@ -100,6 +104,8 @@ export const heinleinWorks: Work[] = [
     year: 1951,
     type: 'novel',
     summary: 'A young man caught between Earth and Venus when war breaks out must choose his allegiance while protecting a secret that could change the course of the conflict.',
+    themes: ['Military & War', 'Coming of Age', 'Politics & Government', 'Space Exploration'],
+    wordCount: 65000,
     characters: [
       { name: 'Don Harvey', description: 'Teenager born in space, holds dual Earth-Venus citizenship' },
       { name: 'Sir Isaac', description: 'Don\'s pet dragon from Venus, highly intelligent and a Venerian native' },
@@ -113,7 +119,7 @@ export const heinleinWorks: Work[] = [
     type: 'novel',
     summary: 'Alien parasites that attach to human hosts and control their minds secretly invade Earth. A secret agent and his team race to stop the invasion before humanity loses its free will.',
     coverImage: puppetCover,
-    themes: ['Alien Invasion', 'Mind Control', 'Paranoia', 'Freedom'],
+    themes: ['Alien Contact', 'Individual Freedom', 'Mind Control', 'Survival'],
     wordCount: 85000,
     characters: [
       { name: 'Sam Cavanaugh', description: 'Secret service agent, also known as Elihu Nivens, protagonist fighting the alien invasion' },
@@ -127,7 +133,7 @@ export const heinleinWorks: Work[] = [
     year: 1952,
     type: 'novel',
     summary: 'The Stone family purchases a used spaceship and embarks on a tour of the Solar System, encountering adventures and business opportunities from the Moon to the asteroid belt.',
-    themes: ['Family', 'Space Travel', 'Adventure', 'Entrepreneurship'],
+    themes: ['Space Exploration', 'Family', 'Adventure', 'Economics'],
     wordCount: 60000,
     characters: [
       { name: 'Roger Stone', description: 'Father and ship\'s pilot, former Mayor of Luna City' },
@@ -145,7 +151,7 @@ export const heinleinWorks: Work[] = [
     year: 1953,
     type: 'novel',
     summary: 'A farm boy with an eidetic memory stows away on a starship and rises through the ranks to become navigator, eventually saving the ship when it becomes lost in uncharted space.',
-    themes: ['Coming of Age', 'Space Travel', 'Meritocracy', 'Adventure'],
+    themes: ['Coming of Age', 'Space Exploration', 'Social Mobility', 'Adventure'],
     wordCount: 65000,
     characters: [
       { name: 'Max Jones', description: 'Young protagonist with photographic memory, dreams of becoming an astrogator' },
@@ -160,7 +166,7 @@ export const heinleinWorks: Work[] = [
     year: 1954,
     type: 'novel',
     summary: 'A boy\'s pet "Lummox" turns out to be a highly intelligent alien, creating diplomatic complications.',
-    themes: ['Alien Intelligence', 'Coming of Age', 'Diplomacy', 'Pets'],
+    themes: ['Alien Contact', 'Coming of Age', 'Diplomacy', 'Intelligence'],
     wordCount: 60000,
     characters: [
       { name: 'John Thomas Stuart XI', description: 'Teenager who owns Lummox' },
@@ -190,6 +196,8 @@ export const heinleinWorks: Work[] = [
     type: 'novel',
     summary: 'An out-of-work actor is hired to impersonate a kidnapped politician. The role becomes permanent, forcing him to become the leader he only pretended to be.',
     coverImage: doubleStarCover,
+    themes: ['Politics & Government', 'Individual Freedom', 'Leadership', 'Identity'],
+    wordCount: 60000,
     characters: [
       { name: 'Lorenzo Smythe', description: 'Unemployed actor known as The Great Lorenzo who must impersonate a political leader' },
       { name: 'Joseph Bonforte', description: 'Prominent politician who is kidnapped' },
@@ -203,7 +211,7 @@ export const heinleinWorks: Work[] = [
     year: 1956,
     type: 'novel',
     summary: 'Twin brothers with telepathic connection are separated when one joins a relativistic space mission, exploring time dilation.',
-    themes: ['Time Dilation', 'Telepathy', 'Space Exploration', 'Family'],
+    themes: ['Time Travel', 'Space Exploration', 'Family', 'Communication'],
     wordCount: 65000,
     characters: [
       { name: 'Thomas "Tom" Bartlett', description: 'Twin who goes on space mission' },
@@ -217,6 +225,8 @@ export const heinleinWorks: Work[] = [
     type: 'novel',
     summary: 'An engineer betrayed by his business partner and fiancée uses suspended animation to travel to the future, then discovers time travel, allowing him to change his past.',
     coverImage: doorCover,
+    themes: ['Time Travel', 'AI & Technology', 'Romance', 'Individual Freedom'],
+    wordCount: 60000,
     characters: [
       { name: 'Daniel Boone Davis', description: 'Inventor and engineer who travels through time' },
       { name: 'Miles Gentry', description: 'Dan\'s treacherous business partner' },
@@ -232,6 +242,8 @@ export const heinleinWorks: Work[] = [
     type: 'novel',
     summary: 'A slave boy is freed by a beggar who is secretly a powerful agent. After his mentor\'s death, he discovers his true identity and must confront an interstellar slave trade.',
     coverImage: citizenCover,
+    themes: ['Individual Freedom', 'Coming of Age', 'Economics', 'Space Exploration'],
+    wordCount: 70000,
     characters: [
       { name: 'Thorby', description: 'Former slave who discovers he is Thor B. Rudbek, heir to a powerful corporation' },
       { name: 'Baslim the Cripple', description: 'Beggar who is actually a secret agent, adopts Thorby' },
@@ -245,6 +257,8 @@ export const heinleinWorks: Work[] = [
     year: 1958,
     type: 'novel',
     summary: 'A high school student wins a space suit in a contest, gets kidnapped by aliens, and finds himself defending humanity\'s right to survive before an intergalactic tribunal.',
+    themes: ['Alien Contact', 'Coming of Age', 'Adventure', 'Individual Freedom'],
+    wordCount: 65000,
     characters: [
       { name: 'Clifford "Kip" Russell', description: 'Resourceful teenager who wins a space suit and adventures beyond Earth' },
       { name: 'Patricia "Peewee"', description: 'Precocious young genius, daughter of a famous scientist' },
@@ -258,6 +272,8 @@ export const heinleinWorks: Work[] = [
     year: 1958,
     type: 'novel',
     summary: 'Members of a long-lived human bloodline flee Earth in a stolen starship when the secret of their longevity is exposed and they face persecution from normal humans.',
+    themes: ['Space Exploration', 'Individual Freedom', 'Immortality', 'Politics & Government'],
+    wordCount: 65000,
     characters: [
       { name: 'Lazarus Long', description: 'Oldest member of the Howard Families, resourceful and cunning survivor' },
       { name: 'Andrew Jackson "Slipstick" Libby', description: 'Mathematical genius who developed the Libby Drive' },
@@ -272,6 +288,8 @@ export const heinleinWorks: Work[] = [
     type: 'novel',
     summary: 'In a future where citizenship is earned through military service, a young soldier rises through the ranks of the Mobile Infantry while humanity wages war against insectoid aliens.',
     coverImage: starshipCover,
+    themes: ['Military & War', 'Politics & Government', 'Individual Freedom', 'Duty'],
+    wordCount: 105000,
     characters: [
       { name: 'Juan "Johnny" Rico', description: 'Filipino soldier who joins Mobile Infantry and rises to command' },
       { name: 'Sergeant Charles Zim', description: 'Tough training instructor who later serves under Rico' },
@@ -289,6 +307,8 @@ export const heinleinWorks: Work[] = [
     type: 'novel',
     summary: 'A human raised by Martians returns to Earth as an adult, bringing Martian philosophy and abilities. His presence catalyzes a cultural revolution questioning sexuality, religion, and society.',
     coverImage: strangerCover,
+    themes: ['Religion & Philosophy', 'Alien Contact', 'Individual Freedom', 'Society Building'],
+    wordCount: 160000,
     characters: [
       { name: 'Valentine Michael Smith', description: 'Human raised on Mars with supernatural abilities and alien perspective' },
       { name: 'Jubal Harshaw', description: 'Cynical but wise writer and doctor who becomes Mike\'s mentor' },
@@ -313,7 +333,7 @@ export const heinleinWorks: Work[] = [
     year: 1963,
     type: 'novel',
     summary: 'A teenage girl from Mars travels to Earth and Venus, documenting her adventures and dreams of becoming a starship captain.',
-    themes: ['Coming of Age', 'Adventure', 'Gender Roles', 'Space Travel'],
+    themes: ['Coming of Age', 'Adventure', 'Gender & Identity', 'Space Exploration'],
     wordCount: 55000,
     characters: [
       { name: 'Podkayne Fries', description: 'Ambitious teenage girl from Mars' },
@@ -326,7 +346,7 @@ export const heinleinWorks: Work[] = [
     year: 1963,
     type: 'novel',
     summary: 'A Vietnam veteran is recruited for a quest through alternate universes to recover a magical artifact.',
-    themes: ['Adventure', 'Fantasy', 'Heroism', 'Parallel Universes'],
+    themes: ['Adventure', 'Parallel Universes', 'Heroism', 'Romance'],
     wordCount: 85000,
     characters: [
       { name: 'Evelyn Cyril "E.C." Gordon (Oscar)', description: 'Veteran recruited for quest' },
@@ -340,7 +360,7 @@ export const heinleinWorks: Work[] = [
     year: 1963,
     type: 'novel',
     summary: 'Inhabitants of a generation ship have forgotten their mission. A young man discovers the truth about their vessel. Fix-up of "Universe" and "Common Sense" novellas.',
-    themes: ['Generation Ships', 'Lost Knowledge', 'Exploration', 'Religion'],
+    themes: ['Space Exploration', 'Society Building', 'Religion & Philosophy', 'Lost Knowledge'],
     wordCount: 45000,
     characters: [
       { name: 'Hugh Hoyland', description: 'Crew member who discovers the truth about the ship' },
@@ -353,7 +373,7 @@ export const heinleinWorks: Work[] = [
     year: 1964,
     type: 'novel',
     summary: 'A family survives nuclear war only to be transported to a future where racial roles are reversed.',
-    themes: ['Nuclear War', 'Survival', 'Racism', 'Time Travel'],
+    themes: ['Military & War', 'Survival', 'Race Relations', 'Time Travel'],
     wordCount: 95000,
     characters: [
       { name: 'Hugh Farnham', description: 'Patriarch preparing for nuclear war' },
@@ -366,6 +386,8 @@ export const heinleinWorks: Work[] = [
     year: 1963,
     type: 'novel',
     summary: 'A teenage Martian girl keeps a diary of her first trip to Earth and Venus, which becomes increasingly serious as her family becomes entangled in interplanetary politics.',
+    themes: ['Coming of Age', 'Adventure', 'Gender & Identity', 'Space Exploration'],
+    wordCount: 55000,
     characters: [
       { name: 'Podkayne "Poddy" Fries', description: 'Enthusiastic teenage Martian girl who dreams of becoming a starship pilot' },
       { name: 'Clark Fries', description: 'Poddy\'s brilliant but amoral younger brother' },
@@ -379,6 +401,8 @@ export const heinleinWorks: Work[] = [
     year: 1963,
     type: 'novel',
     summary: 'A Vietnam veteran answers a mysterious ad and finds himself on a quest through multiple dimensions to recover a magical artifact, guided by a beautiful woman who is more than she seems.',
+    themes: ['Adventure', 'Parallel Universes', 'Heroism', 'Romance'],
+    wordCount: 85000,
     characters: [
       { name: 'E.C. "Oscar" Gordon', description: 'Former soldier who becomes a hero in another dimension' },
       { name: 'Star', description: 'Her Wisdom, powerful ruler seeking the Egg of the Phoenix' },
@@ -391,6 +415,8 @@ export const heinleinWorks: Work[] = [
     year: 1964,
     type: 'novel',
     summary: 'A family survives a nuclear attack in their bomb shelter, only to find themselves thrown into a future where racial power dynamics are inverted and survival requires difficult choices.',
+    themes: ['Military & War', 'Survival', 'Race Relations', 'Time Travel'],
+    wordCount: 95000,
     characters: [
       { name: 'Hugh Farnham', description: 'Survivalist patriarch trying to protect his family' },
       { name: 'Grace Farnham', description: 'Hugh\'s wife, struggling with their situation' },
@@ -406,6 +432,8 @@ export const heinleinWorks: Work[] = [
     type: 'novel',
     summary: 'A supercomputer, a one-armed computer technician, a political activist, and a revolutionary professor lead a rebellion to free the Moon from Earth\'s colonial rule.',
     coverImage: moonCover,
+    themes: ['Revolution', 'Politics & Government', 'AI & Technology', 'Individual Freedom'],
+    wordCount: 130000,
     characters: [
       { name: 'Manuel "Mannie" Garcia O\'Kelly-Davis', description: 'Computer technician and first friend of Mike the AI' },
       { name: 'Mycroft "Mike" Holmes', description: 'Self-aware supercomputer who joins the revolution' },
@@ -419,6 +447,8 @@ export const heinleinWorks: Work[] = [
     year: 1970,
     type: 'novel',
     summary: 'A dying elderly billionaire has his brain transplanted into a young woman\'s body, leading to explorations of identity, gender, sexuality, and consciousness.',
+    themes: ['Gender & Identity', 'AI & Technology', 'Consciousness', 'Individual Freedom'],
+    wordCount: 145000,
     characters: [
       { name: 'Johann Sebastian Bach Smith', description: 'Elderly billionaire whose brain is transplanted' },
       { name: 'Joan Eunice Smith', description: 'New identity after brain transplant into Eunice\'s body' },
@@ -434,6 +464,8 @@ export const heinleinWorks: Work[] = [
     type: 'novel',
     summary: 'Lazarus Long, the oldest living human, recounts his life experiences across centuries and planets, exploring themes of love, family, and the meaning of life.',
     coverImage: timeCover,
+    themes: ['Time Travel', 'Family', 'Individual Freedom', 'Immortality'],
+    wordCount: 190000,
     characters: [
       { name: 'Lazarus Long', description: 'Immortal protagonist, born Woodrow Wilson Smith in 1912' },
       { name: 'Maureen Johnson', description: 'Lazarus\'s mother, whom he meets through time travel' },
@@ -449,6 +481,8 @@ export const heinleinWorks: Work[] = [
     year: 1980,
     type: 'novel',
     summary: 'Two couples travel through parallel universes in a modified car, visiting fictional worlds and meeting characters from other stories while evading mysterious "Black Hats."',
+    themes: ['Parallel Universes', 'Adventure', 'Space Exploration', 'Metafiction'],
+    wordCount: 115000,
     characters: [
       { name: 'Zebadiah John Carter', description: 'Captain Zeb Carter, owns the space-time car' },
       { name: 'Dejah Thoris "Deety" Burroughs Carter', description: 'Mathematician and Zeb\'s wife' },
@@ -462,6 +496,8 @@ export const heinleinWorks: Work[] = [
     year: 1982,
     type: 'novel',
     summary: 'A genetically engineered woman works as a secret courier in a balkanized future Earth, searching for a place to belong while questioning what it means to be human.',
+    themes: ['AI & Technology', 'Gender & Identity', 'Individual Freedom', 'Politics & Government'],
+    wordCount: 105000,
     characters: [
       { name: 'Friday Jones', description: 'Artificial human courier with enhanced abilities' },
       { name: 'Dr. Hartley "Kettle Belly" Baldwin', description: 'Boss at courier service' },
@@ -474,6 +510,8 @@ export const heinleinWorks: Work[] = [
     year: 1984,
     type: 'novel',
     summary: 'A fundamentalist Christian minister repeatedly shifts between alternate realities, losing everything. With his pagan lover, he discovers the truth about gods, devils, and the nature of existence.',
+    themes: ['Religion & Philosophy', 'Parallel Universes', 'Individual Freedom', 'Romance'],
+    wordCount: 100000,
     characters: [
       { name: 'Alex Hergensheimer', description: 'Minister who loses his faith and finds true love' },
       { name: 'Alec Graham', description: 'Alex\'s name in another reality' },
@@ -486,6 +524,8 @@ export const heinleinWorks: Work[] = [
     year: 1985,
     type: 'novel',
     summary: 'A retired military officer living on a space station is drawn into a complex conspiracy involving time travel, artificial intelligence, and characters from other Heinlein novels.',
+    themes: ['Time Travel', 'AI & Technology', 'Conspiracy', 'Metafiction'],
+    wordCount: 110000,
     characters: [
       { name: 'Richard Ames', description: 'Retired colonel and writer, also known as Colin Campbell' },
       { name: 'Gwendolyn Novak', description: 'Mysterious woman, revealed to be Hazel Meade Stone' },
@@ -498,6 +538,8 @@ export const heinleinWorks: Work[] = [
     year: 1987,
     type: 'novel',
     summary: 'The autobiography of Maureen Johnson, mother of Lazarus Long, exploring her life, loves, and adventures across time and space in Heinlein\'s multiverse.',
+    themes: ['Time Travel', 'Family', 'Individual Freedom', 'Immortality'],
+    wordCount: 140000,
     characters: [
       { name: 'Maureen Johnson Smith Long', description: 'Matriarch of the Long family, mother of Lazarus Long' },
       { name: 'Brian Smith', description: 'Maureen\'s husband' },

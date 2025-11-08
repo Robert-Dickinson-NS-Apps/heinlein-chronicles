@@ -6,7 +6,7 @@ export const additionalShortStories = [
     year: 1939,
     type: 'short-story' as const,
     summary: 'A scientist invents a machine that can predict the exact moment of a person\'s death, causing economic and social upheaval.',
-    themes: ['Prediction', 'Death', 'Technology', 'Economics'],
+    themes: ['AI & Technology', 'Economics', 'Ethics', 'Individual Freedom'],
     wordCount: 7000,
     characters: [
       { name: 'Dr. Pinero', description: 'Inventor of life prediction machine' }
@@ -18,7 +18,7 @@ export const additionalShortStories = [
     year: 1939,
     type: 'short-story' as const,
     summary: 'A young man with mathematical genius joins the Cosmic Construction Corps to build a space station.',
-    themes: ['Mathematics', 'Space Construction', 'Genius', 'Coming of Age'],
+    themes: ['Space Exploration', 'Coming of Age', 'AI & Technology', 'Individual Freedom'],
     wordCount: 6000,
     characters: [
       { name: 'Andrew Jackson "Slipstick" Libby', description: 'Mathematical genius in the CCC' }
@@ -30,7 +30,7 @@ export const additionalShortStories = [
     year: 1940,
     type: 'short-story' as const,
     summary: 'An elderly space pioneer, now grounded on Earth, pays for one final trip to the Moon to die where he always dreamed.',
-    themes: ['Dreams', 'Death', 'Space Travel', 'Fulfillment'],
+    themes: ['Space Exploration', 'Individual Freedom', 'Economics', 'Adventure'],
     wordCount: 5000,
     characters: [
       { name: 'Delos D. Harriman', description: 'Aging entrepreneur who sold the Moon' }
@@ -42,7 +42,7 @@ export const additionalShortStories = [
     year: 1940,
     type: 'novella' as const,
     summary: 'A soldier in a theocratic United States joins a revolution to overthrow a religious dictatorship.',
-    themes: ['Theocracy', 'Revolution', 'Religion', 'Freedom'],
+    themes: ['Religion & Philosophy', 'Revolution', 'Politics & Government', 'Individual Freedom'],
     wordCount: 60000,
     characters: [
       { name: 'John Lyle', description: 'Guard officer who joins revolution' },
@@ -55,7 +55,7 @@ export const additionalShortStories = [
     year: 1940,
     type: 'short-story' as const,
     summary: 'When workers of the giant rolling roads go on strike, a transportation engineer must prevent societal collapse.',
-    themes: ['Infrastructure', 'Labor', 'Technology', 'Crisis Management'],
+    themes: ['AI & Technology', 'Economics', 'Politics & Government', 'Society Building'],
     wordCount: 11000,
     characters: [
       { name: 'Larry Gaines', description: 'Chief engineer of the rolling roads' }
@@ -67,7 +67,7 @@ export const additionalShortStories = [
     year: 1940,
     type: 'short-story' as const,
     summary: 'A man who rejects society is exiled to Coventry, a walled territory for outcasts, where he learns the value of civilization.',
-    themes: ['Society', 'Exile', 'Individualism', 'Government'],
+    themes: ['Individual Freedom', 'Politics & Government', 'Society Building', 'Survival'],
     wordCount: 13000,
     characters: [
       { name: 'David MacKinnon', description: 'Exile learning about society' }
@@ -79,7 +79,7 @@ export const additionalShortStories = [
     year: 1940,
     type: 'short-story' as const,
     summary: 'Engineers at a nuclear power plant face the psychological strain of preventing a catastrophic meltdown.',
-    themes: ['Nuclear Power', 'Psychology', 'Stress', 'Safety'],
+    themes: ['AI & Technology', 'Military & War', 'Ethics', 'Survival'],
     wordCount: 16000,
     characters: [
       { name: 'Dr. Silard', description: 'Psychiatrist monitoring reactor personnel' },
@@ -92,7 +92,7 @@ export const additionalShortStories = [
     year: 1940,
     type: 'novella' as const,
     summary: 'In a world where magic is commercialized, a businessman fights a protection racket run by demons.',
-    themes: ['Magic', 'Business', 'Organized Crime', 'Fantasy'],
+    themes: ['Parallel Universes', 'Economics', 'Adventure', 'Individual Freedom'],
     wordCount: 23000,
     characters: [
       { name: 'Archie Fraser', description: 'Businessman fighting magical mafia' }
