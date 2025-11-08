@@ -61,6 +61,13 @@ export default {
           navy: "hsl(var(--literary-navy))",
           amber: "hsl(var(--literary-amber))",
         },
+        chart: {
+          "1": "hsl(220, 70%, 50%)",
+          "2": "hsl(280, 60%, 50%)",
+          "3": "hsl(340, 75%, 55%)",
+          "4": "hsl(40, 80%, 55%)",
+          "5": "hsl(160, 60%, 45%)",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

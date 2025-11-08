@@ -102,9 +102,8 @@ export const heinleinWorks: Work[] = [
     summary: 'A young man caught between Earth and Venus when war breaks out must choose his allegiance while protecting a secret that could change the course of the conflict.',
     characters: [
       { name: 'Don Harvey', description: 'Teenager born in space, holds dual Earth-Venus citizenship' },
-      { name: 'Sir Isaac Newton', description: 'Don\'s pet dragon from Venus, highly intelligent' },
-      { name: 'Dr. Jefferson', description: 'Don\'s guardian and mentor' },
-      { name: 'Isobel', description: 'A young woman Don meets during his journey' }
+      { name: 'Sir Isaac', description: 'Don\'s pet dragon from Venus, highly intelligent and a Venerian native' },
+      { name: 'Dr. Jefferson', description: 'Don\'s guardian and mentor' }
     ]
   },
   {
@@ -117,10 +116,9 @@ export const heinleinWorks: Work[] = [
     themes: ['Alien Invasion', 'Mind Control', 'Paranoia', 'Freedom'],
     wordCount: 85000,
     characters: [
-      { name: 'Sam Cavanaugh', description: 'Secret service agent, protagonist fighting the alien invasion' },
-      { name: 'The Old Man', description: 'Sam\'s superior, head of a secret government agency' },
-      { name: 'Mary', description: 'Beautiful agent who becomes Sam\'s partner and love interest' },
-      { name: 'The Titans', description: 'Slug-like alien parasites that attach to human spinal columns' }
+      { name: 'Sam Cavanaugh', description: 'Secret service agent, also known as Elihu Nivens, protagonist fighting the alien invasion' },
+      { name: 'Andrew "The Old Man" Nivens', description: 'Sam\'s superior, head of a secret government agency' },
+      { name: 'Mary Sperling', description: 'Beautiful agent who becomes Sam\'s partner and love interest' }
     ]
   },
   {
@@ -133,12 +131,12 @@ export const heinleinWorks: Work[] = [
     wordCount: 60000,
     characters: [
       { name: 'Roger Stone', description: 'Father and ship\'s pilot, former Mayor of Luna City' },
-      { name: 'Edith Stone', description: 'Mother, ship\'s engineer and medical officer' },
+      { name: 'Dr. Edith Stone', description: 'Mother, ship\'s engineer and medical officer' },
       { name: 'Castor Stone', description: 'Twin son, mechanical genius' },
       { name: 'Pollux Stone', description: 'Twin son, Castor\'s identical twin and business partner' },
-      { name: 'Hazel Stone', description: 'Grandmother, writer and sharp-tongued matriarch' },
+      { name: 'Hazel Stone', description: 'Grandmother, writer and sharp-tongued matriarch, also known as Gwendolyn Novak' },
       { name: 'Meade Stone', description: 'Teenage daughter' },
-      { name: 'Buster Stone', description: 'Young son' }
+      { name: 'Lowell "Buster" Stone', description: 'Young son' }
     ]
   },
   {
@@ -152,7 +150,7 @@ export const heinleinWorks: Work[] = [
     characters: [
       { name: 'Max Jones', description: 'Young protagonist with photographic memory, dreams of becoming an astrogator' },
       { name: 'Sam Anderson', description: 'Experienced spacer who befriends Max' },
-      { name: 'Eldreth Coburn', description: 'Wealthy passenger who Max befriends' },
+      { name: 'Eldreth "Ellie" Coburn', description: 'Wealthy passenger who Max befriends' },
       { name: 'Captain Blaine', description: 'Commander of the starship' }
     ]
   },
@@ -166,7 +164,8 @@ export const heinleinWorks: Work[] = [
     wordCount: 60000,
     characters: [
       { name: 'John Thomas Stuart XI', description: 'Teenager who owns Lummox' },
-      { name: 'Lummox', description: 'Alien creature thought to be a pet' }
+      { name: 'Lummox', description: 'Alien creature thought to be a pet' },
+      { name: 'Mr. (Henry Gladstone) Kiku', description: 'Alien ambassador' }
     ]
   },
   {
@@ -179,7 +178,7 @@ export const heinleinWorks: Work[] = [
     wordCount: 65000,
     characters: [
       { name: 'Rod Walker', description: 'Protagonist, mature and capable survival student' },
-      { name: 'Jack Daudet', description: 'Rod\'s friend and fellow student' },
+      { name: 'Jacqueline "Jack" Daudet', description: 'Rod\'s friend and fellow student' },
       { name: 'Caroline Mshiyeni', description: 'Capable female student who becomes Rod\'s partner' },
       { name: 'Grant Cowper', description: 'Student who tries to establish himself as leader' }
     ]
@@ -192,9 +191,9 @@ export const heinleinWorks: Work[] = [
     summary: 'An out-of-work actor is hired to impersonate a kidnapped politician. The role becomes permanent, forcing him to become the leader he only pretended to be.',
     coverImage: doubleStarCover,
     characters: [
-      { name: 'Lawrence Smith (Lorenzo Smythe)', description: 'Unemployed actor who must impersonate a political leader' },
-      { name: 'John Joseph Bonforte', description: 'Prominent politician who is kidnapped' },
-      { name: 'Penny Russell', description: 'Bonforte\'s assistant and confidante' },
+      { name: 'Lorenzo Smythe', description: 'Unemployed actor known as The Great Lorenzo who must impersonate a political leader' },
+      { name: 'Joseph Bonforte', description: 'Prominent politician who is kidnapped' },
+      { name: 'Penny', description: 'Bonforte\'s secretary and confidante' },
       { name: 'Dak Broadbent', description: 'Spaceship pilot and loyal member of Bonforte\'s team' }
     ]
   },
@@ -207,8 +206,8 @@ export const heinleinWorks: Work[] = [
     themes: ['Time Dilation', 'Telepathy', 'Space Exploration', 'Family'],
     wordCount: 65000,
     characters: [
-      { name: 'Tom Bartlett', description: 'Twin who goes on space mission' },
-      { name: 'Pat Bartlett', description: 'Twin who stays on Earth' }
+      { name: 'Thomas "Tom" Bartlett', description: 'Twin who goes on space mission' },
+      { name: 'Patrick "Pat" Bartlett', description: 'Twin who stays on Earth' }
     ]
   },
   {
@@ -221,9 +220,9 @@ export const heinleinWorks: Work[] = [
     characters: [
       { name: 'Daniel Boone Davis', description: 'Inventor and engineer who travels through time' },
       { name: 'Miles Gentry', description: 'Dan\'s treacherous business partner' },
-      { name: 'Belle Darkin', description: 'Dan\'s former fiancée who betrays him' },
+      { name: 'Belle S. Darkin', description: 'Dan\'s former fiancée who betrays him' },
       { name: 'Frederica "Ricky" Gentry', description: 'Miles\' stepdaughter, becomes central to Dan\'s life' },
-      { name: 'Pete', description: 'Dan\'s cat, always looking for "the door into summer"' }
+      { name: 'Petronius "Pete" the Arbiter', description: 'Dan\'s cat, always looking for "the door into summer"' }
     ]
   },
   {
@@ -234,7 +233,7 @@ export const heinleinWorks: Work[] = [
     summary: 'A slave boy is freed by a beggar who is secretly a powerful agent. After his mentor\'s death, he discovers his true identity and must confront an interstellar slave trade.',
     coverImage: citizenCover,
     characters: [
-      { name: 'Thorby Baslim', description: 'Former slave who discovers he is heir to a powerful corporation' },
+      { name: 'Thorby', description: 'Former slave who discovers he is Thor B. Rudbek, heir to a powerful corporation' },
       { name: 'Baslim the Cripple', description: 'Beggar who is actually a secret agent, adopts Thorby' },
       { name: 'Captain Krausa', description: 'Captain of the free trader ship Sisu' },
       { name: 'Margaret', description: 'Member of Sisu\'s crew who befriends Thorby' }
@@ -248,7 +247,7 @@ export const heinleinWorks: Work[] = [
     summary: 'A high school student wins a space suit in a contest, gets kidnapped by aliens, and finds himself defending humanity\'s right to survive before an intergalactic tribunal.',
     characters: [
       { name: 'Clifford "Kip" Russell', description: 'Resourceful teenager who wins a space suit and adventures beyond Earth' },
-      { name: 'Peewee', description: 'Precocious young genius, daughter of a famous scientist' },
+      { name: 'Patricia "Peewee"', description: 'Precocious young genius, daughter of a famous scientist' },
       { name: 'The Mother Thing', description: 'Benevolent alien who befriends the humans' },
       { name: 'Wormface', description: 'Antagonistic alien who captures the protagonists' }
     ]
@@ -261,9 +260,9 @@ export const heinleinWorks: Work[] = [
     summary: 'Members of a long-lived human bloodline flee Earth in a stolen starship when the secret of their longevity is exposed and they face persecution from normal humans.',
     characters: [
       { name: 'Lazarus Long', description: 'Oldest member of the Howard Families, resourceful and cunning survivor' },
-      { name: 'Libby', description: 'Mathematical genius who developed the Libby Drive' },
+      { name: 'Andrew Jackson "Slipstick" Libby', description: 'Mathematical genius who developed the Libby Drive' },
       { name: 'Mary Sperling', description: 'Member of the Howard Families\' council' },
-      { name: 'Ford', description: 'Administrator who becomes dictator of Earth' }
+      { name: 'Ira Weatheral', description: 'Administrator who becomes involved with the Howard Families' }
     ]
   },
   {
@@ -274,11 +273,13 @@ export const heinleinWorks: Work[] = [
     summary: 'In a future where citizenship is earned through military service, a young soldier rises through the ranks of the Mobile Infantry while humanity wages war against insectoid aliens.',
     coverImage: starshipCover,
     characters: [
-      { name: 'Juan "Johnnie" Rico', description: 'Filipino soldier who joins Mobile Infantry and rises to command' },
-      { name: 'Sergeant Zim', description: 'Tough training instructor who later serves under Rico' },
+      { name: 'Juan "Johnny" Rico', description: 'Filipino soldier who joins Mobile Infantry and rises to command' },
+      { name: 'Sergeant Charles Zim', description: 'Tough training instructor who later serves under Rico' },
       { name: 'Lieutenant Rasczak', description: 'Rico\'s commanding officer and role model' },
       { name: 'Carmen Ibanez', description: 'Rico\'s high school crush who becomes a starship pilot' },
-      { name: 'Carl', description: 'Rico\'s friend with powerful psychic abilities' }
+      { name: 'Carl Jenkins', description: 'Rico\'s friend with powerful psychic abilities' },
+      { name: 'Mr. (Jean) V. Dubois', description: 'Rico\'s high school teacher of History and Moral Philosophy' },
+      { name: 'Captain Krausa', description: 'Commanding officer' }
     ]
   },
   {
@@ -291,9 +292,19 @@ export const heinleinWorks: Work[] = [
     characters: [
       { name: 'Valentine Michael Smith', description: 'Human raised on Mars with supernatural abilities and alien perspective' },
       { name: 'Jubal Harshaw', description: 'Cynical but wise writer and doctor who becomes Mike\'s mentor' },
-      { name: 'Jill Boardman', description: 'Nurse who helps Mike escape government custody' },
+      { name: 'Jillian "Jill" Boardman', description: 'Nurse who helps Mike escape government custody' },
       { name: 'Ben Caxton', description: 'Journalist investigating Mike\'s situation' },
-      { name: 'Anne', description: 'Member of Jubal\'s household staff' }
+      { name: 'Anne', description: 'Fair Witness and member of Jubal\'s household staff' },
+      { name: 'Miriam', description: 'Member of Jubal\'s household' },
+      { name: 'Dorcas', description: 'Member of Jubal\'s household' },
+      { name: 'Duke', description: 'Member of Jubal\'s household' },
+      { name: 'Larry', description: 'Member of Jubal\'s household' },
+      { name: 'Dr. "Stinky" Mahmoud', description: 'Martian language expert' },
+      { name: 'Patty Paiwonski', description: 'Showgirl who joins the church' },
+      { name: 'Secretary-General Joseph Douglas', description: 'Head of government' },
+      { name: 'Alice Douglas', description: 'Wife of the Secretary-General' },
+      { name: 'Foster', description: 'Archangel Foster, founder of the Fosterite religion' },
+      { name: 'Digby', description: 'Bishop Digby of the Fosterite church' }
     ]
   },
   {
@@ -333,7 +344,7 @@ export const heinleinWorks: Work[] = [
     wordCount: 45000,
     characters: [
       { name: 'Hugh Hoyland', description: 'Crew member who discovers the truth about the ship' },
-      { name: 'Joe-Jim', description: 'Two-headed mutant who helps Hugh' }
+      { name: 'Joe-Jim Gregory', description: 'Two-headed mutant who helps Hugh' }
     ]
   },
   {
@@ -369,8 +380,8 @@ export const heinleinWorks: Work[] = [
     type: 'novel',
     summary: 'A Vietnam veteran answers a mysterious ad and finds himself on a quest through multiple dimensions to recover a magical artifact, guided by a beautiful woman who is more than she seems.',
     characters: [
-      { name: 'Oscar Gordon (Evelyn Cyril Gordon)', description: 'Former soldier who becomes a hero in another dimension' },
-      { name: 'Star (Empress of Twenty Universes)', description: 'Powerful ruler seeking the Egg of the Phoenix' },
+      { name: 'E.C. "Oscar" Gordon', description: 'Former soldier who becomes a hero in another dimension' },
+      { name: 'Star', description: 'Her Wisdom, powerful ruler seeking the Egg of the Phoenix' },
       { name: 'Rufo', description: 'Star\'s loyal companion and swordmaster' }
     ]
   },
@@ -396,10 +407,10 @@ export const heinleinWorks: Work[] = [
     summary: 'A supercomputer, a one-armed computer technician, a political activist, and a revolutionary professor lead a rebellion to free the Moon from Earth\'s colonial rule.',
     coverImage: moonCover,
     characters: [
-      { name: 'Manuel Garcia "Mannie" O\'Kelly-Davis', description: 'Computer technician and first friend of Mike the AI' },
-      { name: 'Mike (Mycroft)', description: 'Self-aware supercomputer who joins the revolution' },
-      { name: 'Wyoming Knott', description: 'Political agitator and revolutionary' },
-      { name: 'Professor Bernardo de la Paz', description: 'Rational anarchist who provides philosophical guidance' }
+      { name: 'Manuel "Mannie" Garcia O\'Kelly-Davis', description: 'Computer technician and first friend of Mike the AI' },
+      { name: 'Mycroft "Mike" Holmes', description: 'Self-aware supercomputer who joins the revolution' },
+      { name: 'Wyoming "Wyoh" Knott', description: 'Political agitator and revolutionary' },
+      { name: 'Prof. Bernardo de la Paz', description: 'Rational anarchist who provides philosophical guidance' }
     ]
   },
   {
@@ -410,9 +421,10 @@ export const heinleinWorks: Work[] = [
     summary: 'A dying elderly billionaire has his brain transplanted into a young woman\'s body, leading to explorations of identity, gender, sexuality, and consciousness.',
     characters: [
       { name: 'Johann Sebastian Bach Smith', description: 'Elderly billionaire whose brain is transplanted' },
+      { name: 'Joan Eunice Smith', description: 'New identity after brain transplant into Eunice\'s body' },
       { name: 'Eunice Branca', description: 'Young secretary whose body receives Johann\'s brain' },
       { name: 'Jake Salomon', description: 'Johann\'s lawyer and friend' },
-      { name: 'Dr. Garcia', description: 'Surgeon who performs the transplant' }
+      { name: 'Joe Branca', description: 'Eunice\'s widower' }
     ]
   },
   {
@@ -424,9 +436,10 @@ export const heinleinWorks: Work[] = [
     coverImage: timeCover,
     characters: [
       { name: 'Lazarus Long', description: 'Immortal protagonist, born Woodrow Wilson Smith in 1912' },
-      { name: 'Dora Brandon Long', description: 'One of Lazarus\'s wives' },
-      { name: 'Lapis Lazuli Long', description: 'One of Lazarus\'s clone daughters' },
-      { name: 'Lorelei Lee Long', description: 'One of Lazarus\'s clone daughters' },
+      { name: 'Maureen Johnson', description: 'Lazarus\'s mother, whom he meets through time travel' },
+      { name: 'Dora', description: 'Ship computer who becomes Lazarus\'s companion' },
+      { name: 'Galahad', description: 'One of Lazarus\'s clones' },
+      { name: 'Ira Howard', description: 'Administrator and Lazarus\'s descendant' },
       { name: 'Minerva', description: 'Sentient computer who becomes human' }
     ]
   },
@@ -438,8 +451,8 @@ export const heinleinWorks: Work[] = [
     summary: 'Two couples travel through parallel universes in a modified car, visiting fictional worlds and meeting characters from other stories while evading mysterious "Black Hats."',
     characters: [
       { name: 'Zebadiah John Carter', description: 'Captain Zeb Carter, owns the space-time car' },
-      { name: 'Deety', description: 'Mathematician and Zeb\'s wife' },
-      { name: 'Hilda', description: 'Deety\'s vivacious mother' },
+      { name: 'Dejah Thoris "Deety" Burroughs Carter', description: 'Mathematician and Zeb\'s wife' },
+      { name: 'Hilda "Sharpie" Burroughs', description: 'Deety\'s vivacious mother' },
       { name: 'Jacob Burroughs', description: 'Scientist who invented the space-time device' }
     ]
   },
@@ -450,9 +463,9 @@ export const heinleinWorks: Work[] = [
     type: 'novel',
     summary: 'A genetically engineered woman works as a secret courier in a balkanized future Earth, searching for a place to belong while questioning what it means to be human.',
     characters: [
-      { name: 'Friday Baldwin', description: 'Artificial human courier with enhanced abilities' },
-      { name: 'Boss', description: 'Friday\'s employer in the courier service' },
-      { name: 'Georges Perreault', description: 'Friday\'s husband in one of her marriages' }
+      { name: 'Friday Jones', description: 'Artificial human courier with enhanced abilities' },
+      { name: 'Dr. Hartley "Kettle Belly" Baldwin', description: 'Boss at courier service' },
+      { name: 'Pug', description: 'Friend and fellow courier' }
     ]
   },
   {
@@ -462,10 +475,9 @@ export const heinleinWorks: Work[] = [
     type: 'novel',
     summary: 'A fundamentalist Christian minister repeatedly shifts between alternate realities, losing everything. With his pagan lover, he discovers the truth about gods, devils, and the nature of existence.',
     characters: [
-      { name: 'Alexander Hergensheimer', description: 'Minister who loses his faith and finds true love' },
-      { name: 'Margrethe', description: 'Danish woman and Alex\'s love interest' },
-      { name: 'Satan', description: 'The Devil, who is more reasonable than expected' },
-      { name: 'Yahweh', description: 'God, portrayed as tyrannical' }
+      { name: 'Alex Hergensheimer', description: 'Minister who loses his faith and finds true love' },
+      { name: 'Alec Graham', description: 'Alex\'s name in another reality' },
+      { name: 'Margrethe', description: 'Danish woman and Alex\'s love interest' }
     ]
   },
   {
@@ -475,9 +487,8 @@ export const heinleinWorks: Work[] = [
     type: 'novel',
     summary: 'A retired military officer living on a space station is drawn into a complex conspiracy involving time travel, artificial intelligence, and characters from other Heinlein novels.',
     characters: [
-      { name: 'Colin Campbell', description: 'Retired colonel and writer' },
-      { name: 'Gwendolyn Novak', description: 'Mysterious woman who involves Colin in her mission' },
-      { name: 'Dr. Richard Ames', description: 'Colin\'s true identity' },
+      { name: 'Richard Ames', description: 'Retired colonel and writer, also known as Colin Campbell' },
+      { name: 'Gwendolyn Novak', description: 'Mysterious woman, revealed to be Hazel Meade Stone' },
       { name: 'Pixel', description: 'The eponymous cat with unusual abilities' }
     ]
   },

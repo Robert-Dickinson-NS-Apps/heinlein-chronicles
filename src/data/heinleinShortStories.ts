@@ -21,7 +21,7 @@ export const additionalShortStories = [
     themes: ['Mathematics', 'Space Construction', 'Genius', 'Coming of Age'],
     wordCount: 6000,
     characters: [
-      { name: 'Andrew Jackson Libby', description: 'Mathematical genius in the CCC' }
+      { name: 'Andrew Jackson "Slipstick" Libby', description: 'Mathematical genius in the CCC' }
     ]
   },
   {
@@ -33,7 +33,7 @@ export const additionalShortStories = [
     themes: ['Dreams', 'Death', 'Space Travel', 'Fulfillment'],
     wordCount: 5000,
     characters: [
-      { name: 'D.D. Harriman', description: 'Aging entrepreneur who sold the Moon' }
+      { name: 'Delos D. Harriman', description: 'Aging entrepreneur who sold the Moon' }
     ]
   },
   {

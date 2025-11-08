@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ArrowLeft, BarChart3, BookOpen, Users, Calendar } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, LineChart, Line } from 'recharts';
+import { NetworkGraph } from '@/components/NetworkGraph';
 
 const Statistics = () => {
   const navigate = useNavigate();
@@ -271,6 +272,9 @@ const Statistics = () => {
             </ResponsiveContainer>
           </Card>
         </div>
+
+        {/* Network Graph Visualization */}
+        <NetworkGraph />
 
         {/* Additional Stats */}
         <Card className="p-6">
