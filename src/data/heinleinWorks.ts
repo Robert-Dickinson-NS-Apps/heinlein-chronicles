@@ -6,6 +6,20 @@ import doorCover from '@/assets/covers/door-into-summer.jpg';
 import timeCover from '@/assets/covers/time-enough-love.jpg';
 import puppetCover from '@/assets/covers/puppet-masters.jpg';
 import citizenCover from '@/assets/covers/citizen-galaxy.jpg';
+import forUsLivingCover from '@/assets/covers/for-us-living.jpg';
+import rocketGalileoCover from '@/assets/covers/rocket-ship-galileo.jpg';
+import spaceCadetCover from '@/assets/covers/space-cadet.jpg';
+import redPlanetCover from '@/assets/covers/red-planet.jpg';
+import beyondHorizonCover from '@/assets/covers/beyond-horizon.jpg';
+import betweenPlanetsCover from '@/assets/covers/between-planets.jpg';
+import rollingStonesCover from '@/assets/covers/rolling-stones.jpg';
+import starmanJonesCover from '@/assets/covers/starman-jones.jpg';
+import starBeastCover from '@/assets/covers/star-beast.jpg';
+import tunnelSkyCover from '@/assets/covers/tunnel-sky.jpg';
+import fridayCover from '@/assets/covers/friday.jpg';
+import podkayneCover from '@/assets/covers/podkayne-mars.jpg';
+import gloryRoadCover from '@/assets/covers/glory-road.jpg';
+import numberBeastCover from '@/assets/covers/number-beast.jpg';
 import { additionalShortStories } from './heinleinShortStories';
 
 export interface Character {
@@ -35,6 +49,7 @@ export const heinleinWorks: Work[] = [
     summary: 'A man from 1939 wakes up in the year 2086 and explores a utopian society based on social credit economics. Published posthumously in 2003.',
     themes: ['Time Travel', 'Politics & Government', 'Economics', 'Utopian Society'],
     wordCount: 90000,
+    coverImage: forUsLivingCover,
     characters: [
       { name: 'Perry Nelson', description: 'Man from 1939 transported to future' },
       { name: 'Diana', description: 'Woman from 2086 who guides Perry' }
@@ -48,6 +63,7 @@ export const heinleinWorks: Work[] = [
     summary: 'Three teenage boys and a scientist travel to the Moon in a privately built rocket ship, where they discover evidence of Nazi survivors plotting a new war.',
     themes: ['Space Exploration', 'Coming of Age', 'Adventure'],
     wordCount: 60000,
+    coverImage: rocketGalileoCover,
     characters: [
       { name: 'Ross Jenkins', description: 'Intelligent and determined teenager, natural leader of the group' },
       { name: 'Art Mueller', description: 'Ross\'s friend, skilled in engineering and practical matters' },
@@ -63,6 +79,7 @@ export const heinleinWorks: Work[] = [
     summary: 'Matt Dodson joins the Space Patrol Academy and undergoes rigorous training to become a guardian of peace in the Solar System, facing challenges that test his courage and principles.',
     themes: ['Military & War', 'Coming of Age', 'Space Exploration', 'Duty'],
     wordCount: 65000,
+    coverImage: spaceCadetCover,
     characters: [
       { name: 'Matt Dodson', description: 'Idealistic young cadet from Iowa, protagonist of the story' },
       { name: 'Tex Jarman', description: 'Matt\'s roommate, a Texan with traditional values' },
@@ -78,6 +95,7 @@ export const heinleinWorks: Work[] = [
     summary: 'Two boys attending boarding school on Mars discover a conspiracy that threatens the colony and must rely on their Martian friend, a native creature, to warn Earth.',
     themes: ['Alien Contact', 'Coming of Age', 'Revolution', 'Space Exploration'],
     wordCount: 55000,
+    coverImage: redPlanetCover,
     characters: [
       { name: 'Jim Marlowe', description: 'Resourceful teenager living on Mars' },
       { name: 'Frank Sutton', description: 'Jim\'s best friend and fellow student' },
@@ -93,6 +111,7 @@ export const heinleinWorks: Work[] = [
     summary: 'In a genetically-engineered utopia, a man questions the purpose of perfection and explores themes of eugenics and individual freedom.',
     themes: ['AI & Technology', 'Individual Freedom', 'Utopian Society', 'Ethics'],
     wordCount: 75000,
+    coverImage: beyondHorizonCover,
     characters: [
       { name: 'Hamilton Felix', description: 'Genetically superior man who questions society' },
       { name: 'Longcourt Phyllis', description: 'Hamilton\'s romantic interest' }
@@ -106,6 +125,7 @@ export const heinleinWorks: Work[] = [
     summary: 'A young man caught between Earth and Venus when war breaks out must choose his allegiance while protecting a secret that could change the course of the conflict.',
     themes: ['Military & War', 'Coming of Age', 'Politics & Government', 'Space Exploration'],
     wordCount: 65000,
+    coverImage: betweenPlanetsCover,
     characters: [
       { name: 'Don Harvey', description: 'Teenager born in space, holds dual Earth-Venus citizenship' },
       { name: 'Sir Isaac', description: 'Don\'s pet dragon from Venus, highly intelligent and a Venerian native' },
@@ -135,6 +155,7 @@ export const heinleinWorks: Work[] = [
     summary: 'The Stone family purchases a used spaceship and embarks on a tour of the Solar System, encountering adventures and business opportunities from the Moon to the asteroid belt.',
     themes: ['Space Exploration', 'Family', 'Adventure', 'Economics'],
     wordCount: 60000,
+    coverImage: rollingStonesCover,
     characters: [
       { name: 'Roger Stone', description: 'Father and ship\'s pilot, former Mayor of Luna City' },
       { name: 'Dr. Edith Stone', description: 'Mother, ship\'s engineer and medical officer' },
@@ -153,6 +174,7 @@ export const heinleinWorks: Work[] = [
     summary: 'A farm boy with an eidetic memory stows away on a starship and rises through the ranks to become navigator, eventually saving the ship when it becomes lost in uncharted space.',
     themes: ['Coming of Age', 'Space Exploration', 'Social Mobility', 'Adventure'],
     wordCount: 65000,
+    coverImage: starmanJonesCover,
     characters: [
       { name: 'Max Jones', description: 'Young protagonist with photographic memory, dreams of becoming an astrogator' },
       { name: 'Sam Anderson', description: 'Experienced spacer who befriends Max' },
@@ -168,6 +190,7 @@ export const heinleinWorks: Work[] = [
     summary: 'A boy\'s pet "Lummox" turns out to be a highly intelligent alien, creating diplomatic complications.',
     themes: ['Alien Contact', 'Coming of Age', 'Diplomacy', 'Intelligence'],
     wordCount: 60000,
+    coverImage: starBeastCover,
     characters: [
       { name: 'John Thomas Stuart XI', description: 'Teenager who owns Lummox' },
       { name: 'Lummox', description: 'Alien creature thought to be a pet' },
@@ -182,6 +205,7 @@ export const heinleinWorks: Work[] = [
     summary: 'Students taking a survival test on a distant planet are stranded when the portal back to Earth fails. They must build a new society while hoping for rescue.',
     themes: ['Survival', 'Leadership', 'Society Building', 'Coming of Age'],
     wordCount: 65000,
+    coverImage: tunnelSkyCover,
     characters: [
       { name: 'Rod Walker', description: 'Protagonist, mature and capable survival student' },
       { name: 'Jacqueline "Jack" Daudet', description: 'Rod\'s friend and fellow student' },
@@ -348,6 +372,7 @@ export const heinleinWorks: Work[] = [
     summary: 'A teenage Martian girl keeps a diary of her first trip to Earth and Venus, which becomes increasingly serious as her family becomes entangled in interplanetary politics.',
     themes: ['Coming of Age', 'Adventure', 'Gender & Identity', 'Space Exploration'],
     wordCount: 55000,
+    coverImage: podkayneCover,
     characters: [
       { name: 'Podkayne "Poddy" Fries', description: 'Enthusiastic teenage Martian girl who dreams of becoming a starship pilot' },
       { name: 'Clark Fries', description: 'Poddy\'s brilliant but amoral younger brother' },
@@ -363,6 +388,7 @@ export const heinleinWorks: Work[] = [
     summary: 'A Vietnam veteran answers a mysterious ad and finds himself on a quest through multiple dimensions to recover a magical artifact, guided by a beautiful woman who is more than she seems.',
     themes: ['Adventure', 'Parallel Universes', 'Heroism', 'Romance'],
     wordCount: 85000,
+    coverImage: gloryRoadCover,
     characters: [
       { name: 'E.C. "Oscar" Gordon', description: 'Former soldier who becomes a hero in another dimension' },
       { name: 'Star', description: 'Her Wisdom, powerful ruler seeking the Egg of the Phoenix' },
@@ -443,6 +469,7 @@ export const heinleinWorks: Work[] = [
     summary: 'Two couples travel through parallel universes in a modified car, visiting fictional worlds and meeting characters from other stories while evading mysterious "Black Hats."',
     themes: ['Parallel Universes', 'Adventure', 'Space Exploration', 'Metafiction'],
     wordCount: 115000,
+    coverImage: numberBeastCover,
     characters: [
       { name: 'Zebadiah John Carter', description: 'Captain Zeb Carter, owns the space-time car' },
       { name: 'Dejah Thoris "Deety" Burroughs Carter', description: 'Mathematician and Zeb\'s wife' },
@@ -458,6 +485,7 @@ export const heinleinWorks: Work[] = [
     summary: 'A genetically engineered woman works as a secret courier in a balkanized future Earth, searching for a place to belong while questioning what it means to be human.',
     themes: ['AI & Technology', 'Gender & Identity', 'Individual Freedom', 'Politics & Government'],
     wordCount: 105000,
+    coverImage: fridayCover,
     characters: [
       { name: 'Friday Jones', description: 'Artificial human courier with enhanced abilities' },
       { name: 'Dr. Hartley "Kettle Belly" Baldwin', description: 'Boss at courier service' },
