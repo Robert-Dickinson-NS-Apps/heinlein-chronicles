@@ -26,121 +26,18 @@ export interface Work {
 }
 
 export const heinleinWorks: Work[] = [
+  // Novels in chronological order
   {
-    id: 'life-line',
-    title: 'Life-Line',
+    id: 'for-us-the-living',
+    title: 'For Us, the Living: A Comedy of Customs',
     year: 1939,
-    type: 'short-story',
-    summary: 'A scientist invents a device that can predict the exact moment of a person\'s death, threatening the insurance industry and leading to dangerous consequences.',
-    themes: ['Technology', 'Corporate Power', 'Science vs Business'],
-    wordCount: 7000,
+    type: 'novel',
+    summary: 'A man from 1939 wakes up in the year 2086 and explores a utopian society based on social credit economics. Published posthumously in 2003.',
+    themes: ['Social Credit', 'Economics', 'Utopia', 'Time Travel'],
+    wordCount: 90000,
     characters: [
-      { name: 'Dr. Pinero', description: 'Brilliant but eccentric scientist who invents the life-prediction device' },
-      { name: 'Weems', description: 'Insurance company executive who sees Pinero as a threat' }
-    ]
-  },
-  {
-    id: 'misfit',
-    title: 'Misfit',
-    year: 1939,
-    type: 'short-story',
-    summary: 'A young man with extraordinary mathematical abilities joins the Cosmic Construction Corps and proves his worth during a dangerous asteroid engineering mission.',
-    themes: ['Space Colonization', 'Individual Potential', 'Engineering'],
-    wordCount: 6500,
-    characters: [
-      { name: 'Andrew Jackson Libby', description: 'Mathematical genius with an intuitive understanding of physics and ballistics' },
-      { name: 'Captain Doyle', description: 'Commander of the construction crew' }
-    ]
-  },
-  {
-    id: 'requiem',
-    title: 'Requiem',
-    year: 1940,
-    type: 'short-story',
-    summary: 'An aging tycoon who funded the first Moon landing is denied the chance to go himself. In his final days, he makes one last desperate attempt to reach the Moon.',
-    themes: ['Dreams and Ambition', 'Space Exploration', 'Mortality'],
-    wordCount: 4000,
-    characters: [
-      { name: 'D.D. Harriman', description: 'Wealthy entrepreneur and visionary who dreams of reaching the Moon' },
-      { name: 'The Salesman', description: 'Opportunistic individual who helps Harriman achieve his dream' }
-    ]
-  },
-  {
-    id: 'roads-must-roll',
-    title: 'The Roads Must Roll',
-    year: 1940,
-    type: 'short-story',
-    summary: 'In a future where society depends on moving roadways, a labor strike by the road engineers threatens to bring civilization to a halt.',
-    themes: ['Technology Dependence', 'Labor Rights', 'Infrastructure'],
-    wordCount: 15000,
-    characters: [
-      { name: 'Larry Gaines', description: 'Chief engineer who must stop the strike and save the roads' },
-      { name: 'Shorty Van Kleeck', description: 'Leader of the striking workers' }
-    ]
-  },
-  {
-    id: 'blowups-happen',
-    title: 'Blowups Happen',
-    year: 1940,
-    type: 'short-story',
-    summary: 'Engineers running a nuclear power plant face psychological pressure as they worry about a catastrophic meltdown.',
-    themes: ['Nuclear Power', 'Psychological Stress', 'Technology Safety'],
-    wordCount: 18000,
-    characters: [
-      { name: 'Dr. Silard', description: 'Psychiatrist monitoring the mental health of plant operators' },
-      { name: 'Superintendent King', description: 'Plant administrator dealing with the pressure' }
-    ]
-  },
-  {
-    id: 'solution-unsatisfactory',
-    title: 'Solution Unsatisfactory',
-    year: 1941,
-    type: 'short-story',
-    summary: 'America develops radioactive dust as a weapon during WWII, leading to a world where one nation must police all others to prevent nuclear war.',
-    themes: ['Nuclear Weapons', 'World Government', 'Moral Dilemmas'],
-    wordCount: 16000,
-    characters: [
-      { name: 'Colonel Manning', description: 'Military officer overseeing the radioactive dust project' },
-      { name: 'John C. Esterhazy', description: 'Narrator and Manning\'s assistant' }
-    ]
-  },
-  {
-    id: 'universe',
-    title: 'Universe',
-    year: 1941,
-    type: 'novella',
-    summary: 'Generations aboard a massive generation ship have forgotten they\'re on a vessel, believing the ship is the entire universe.',
-    themes: ['Generation Ships', 'Lost Knowledge', 'Religion vs Science'],
-    wordCount: 25000,
-    characters: [
-      { name: 'Hugh Hoyland', description: 'Young crew member who discovers the truth about the ship' },
-      { name: 'Joe-Jim Gregory', description: 'Two-headed mutant who helps Hugh' }
-    ]
-  },
-  {
-    id: 'by-his-bootstraps',
-    title: 'By His Bootstraps',
-    year: 1941,
-    type: 'short-story',
-    summary: 'A man encounters multiple versions of himself through time travel, creating a complex temporal paradox.',
-    themes: ['Time Travel', 'Paradoxes', 'Self-Reliance'],
-    wordCount: 15000,
-    characters: [
-      { name: 'Bob Wilson', description: 'Graduate student caught in a time loop with himself' }
-    ]
-  },
-  {
-    id: 'if-this-goes-on',
-    title: 'If This Goes On—',
-    year: 1940,
-    type: 'novella',
-    summary: 'In a theocratic America ruled by a fundamentalist Prophet, a young officer in the elite guard joins a rebellion after falling in love with one of the Prophet\'s Virgins.',
-    themes: ['Theocracy', 'Revolution', 'Individual Freedom'],
-    wordCount: 60000,
-    characters: [
-      { name: 'John Lyle', description: 'Lieutenant in the Prophet\'s elite Angels of the Lord, becomes a revolutionary' },
-      { name: 'Sister Judith', description: 'One of the Prophet\'s Virgin attendants who inspires John\'s awakening' },
-      { name: 'Zebadiah', description: 'Leader of the underground revolutionary movement' }
+      { name: 'Perry Nelson', description: 'Man from 1939 transported to future' },
+      { name: 'Diana', description: 'Woman from 2086 who guides Perry' }
     ]
   },
   {
@@ -185,42 +82,16 @@ export const heinleinWorks: Work[] = [
     ]
   },
   {
-    id: 'sixth-column',
-    title: 'Sixth Column',
-    year: 1949,
+    id: 'beyond-this-horizon',
+    title: 'Beyond This Horizon',
+    year: 1948,
     type: 'novel',
-    summary: 'After America falls to an Asian invasion, a small group of scientists develops a revolutionary weapon and forms a fake religion as cover for their resistance movement.',
+    summary: 'In a genetically-engineered utopia, a man questions the purpose of perfection and explores themes of eugenics and individual freedom.',
+    themes: ['Genetics', 'Eugenics', 'Utopia', 'Individual Freedom'],
+    wordCount: 75000,
     characters: [
-      { name: 'Major Ardmore', description: 'Leader of the secret resistance group' },
-      { name: 'Colonel Whitey Calhoun', description: 'Second in command, practical military strategist' },
-      { name: 'Dr. Brooks', description: 'Scientist who helped develop the secret weapon' },
-      { name: 'Thomas', description: 'Member of the team who poses as a religious leader' }
-    ]
-  },
-  {
-    id: 'farmer-in-the-sky',
-    title: 'Farmer in the Sky',
-    year: 1950,
-    type: 'novel',
-    summary: 'A teenage boy and his family emigrate from Earth to Ganymede, where they face the harsh realities of terraforming and pioneering on Jupiter\'s moon.',
-    characters: [
-      { name: 'Bill Lermer', description: 'Teenage protagonist who dreams of farming on Ganymede' },
-      { name: 'George Lermer', description: 'Bill\'s father, an engineer' },
-      { name: 'Molly', description: 'Bill\'s stepmother' },
-      { name: 'Peggy', description: 'Bill\'s stepsister' },
-      { name: 'Johann Schultz', description: 'A fellow colonist and mentor to Bill' }
-    ]
-  },
-  {
-    id: 'waldo',
-    title: 'Waldo',
-    year: 1950,
-    type: 'novella',
-    summary: 'A brilliant but physically weak inventor lives in isolation in space, developing remote manipulator devices. When Earth\'s power grid fails mysteriously, only he can solve the crisis.',
-    characters: [
-      { name: 'Waldo Farthingwaite-Jones', description: 'Genius inventor with severe myasthenia gravis, creator of remote manipulators' },
-      { name: 'Dr. Rambeau', description: 'Physicist who has theories about the power failures' },
-      { name: 'Grimes Schneider', description: 'Controversial scientist with unorthodox ideas about energy' }
+      { name: 'Hamilton Felix', description: 'Genetically superior man who questions society' },
+      { name: 'Longcourt Phyllis', description: 'Hamilton\'s romantic interest' }
     ]
   },
   {
@@ -243,6 +114,8 @@ export const heinleinWorks: Work[] = [
     type: 'novel',
     summary: 'Alien parasites that attach to human hosts and control their minds secretly invade Earth. A secret agent and his team race to stop the invasion before humanity loses its free will.',
     coverImage: puppetCover,
+    themes: ['Alien Invasion', 'Mind Control', 'Paranoia', 'Freedom'],
+    wordCount: 85000,
     characters: [
       { name: 'Sam Cavanaugh', description: 'Secret service agent, protagonist fighting the alien invasion' },
       { name: 'The Old Man', description: 'Sam\'s superior, head of a secret government agency' },
@@ -256,6 +129,8 @@ export const heinleinWorks: Work[] = [
     year: 1952,
     type: 'novel',
     summary: 'The Stone family purchases a used spaceship and embarks on a tour of the Solar System, encountering adventures and business opportunities from the Moon to the asteroid belt.',
+    themes: ['Family', 'Space Travel', 'Adventure', 'Entrepreneurship'],
+    wordCount: 60000,
     characters: [
       { name: 'Roger Stone', description: 'Father and ship\'s pilot, former Mayor of Luna City' },
       { name: 'Edith Stone', description: 'Mother, ship\'s engineer and medical officer' },
@@ -272,6 +147,8 @@ export const heinleinWorks: Work[] = [
     year: 1953,
     type: 'novel',
     summary: 'A farm boy with an eidetic memory stows away on a starship and rises through the ranks to become navigator, eventually saving the ship when it becomes lost in uncharted space.',
+    themes: ['Coming of Age', 'Space Travel', 'Meritocracy', 'Adventure'],
+    wordCount: 65000,
     characters: [
       { name: 'Max Jones', description: 'Young protagonist with photographic memory, dreams of becoming an astrogator' },
       { name: 'Sam Anderson', description: 'Experienced spacer who befriends Max' },
@@ -280,11 +157,26 @@ export const heinleinWorks: Work[] = [
     ]
   },
   {
+    id: 'the-star-beast',
+    title: 'The Star Beast',
+    year: 1954,
+    type: 'novel',
+    summary: 'A boy\'s pet "Lummox" turns out to be a highly intelligent alien, creating diplomatic complications.',
+    themes: ['Alien Intelligence', 'Coming of Age', 'Diplomacy', 'Pets'],
+    wordCount: 60000,
+    characters: [
+      { name: 'John Thomas Stuart XI', description: 'Teenager who owns Lummox' },
+      { name: 'Lummox', description: 'Alien creature thought to be a pet' }
+    ]
+  },
+  {
     id: 'tunnel-in-the-sky',
     title: 'Tunnel in the Sky',
     year: 1955,
     type: 'novel',
     summary: 'Students taking a survival test on a distant planet are stranded when the portal back to Earth fails. They must build a new society while hoping for rescue.',
+    themes: ['Survival', 'Leadership', 'Society Building', 'Coming of Age'],
+    wordCount: 65000,
     characters: [
       { name: 'Rod Walker', description: 'Protagonist, mature and capable survival student' },
       { name: 'Jack Daudet', description: 'Rod\'s friend and fellow student' },
@@ -304,6 +196,19 @@ export const heinleinWorks: Work[] = [
       { name: 'John Joseph Bonforte', description: 'Prominent politician who is kidnapped' },
       { name: 'Penny Russell', description: 'Bonforte\'s assistant and confidante' },
       { name: 'Dak Broadbent', description: 'Spaceship pilot and loyal member of Bonforte\'s team' }
+    ]
+  },
+  {
+    id: 'time-for-the-stars',
+    title: 'Time for the Stars',
+    year: 1956,
+    type: 'novel',
+    summary: 'Twin brothers with telepathic connection are separated when one joins a relativistic space mission, exploring time dilation.',
+    themes: ['Time Dilation', 'Telepathy', 'Space Exploration', 'Family'],
+    wordCount: 65000,
+    characters: [
+      { name: 'Tom Bartlett', description: 'Twin who goes on space mission' },
+      { name: 'Pat Bartlett', description: 'Twin who stays on Earth' }
     ]
   },
   {
@@ -389,6 +294,59 @@ export const heinleinWorks: Work[] = [
       { name: 'Jill Boardman', description: 'Nurse who helps Mike escape government custody' },
       { name: 'Ben Caxton', description: 'Journalist investigating Mike\'s situation' },
       { name: 'Anne', description: 'Member of Jubal\'s household staff' }
+    ]
+  },
+  {
+    id: 'podkayne-of-mars',
+    title: 'Podkayne of Mars',
+    year: 1963,
+    type: 'novel',
+    summary: 'A teenage girl from Mars travels to Earth and Venus, documenting her adventures and dreams of becoming a starship captain.',
+    themes: ['Coming of Age', 'Adventure', 'Gender Roles', 'Space Travel'],
+    wordCount: 55000,
+    characters: [
+      { name: 'Podkayne Fries', description: 'Ambitious teenage girl from Mars' },
+      { name: 'Clark Fries', description: 'Podkayne\'s genius younger brother' }
+    ]
+  },
+  {
+    id: 'glory-road',
+    title: 'Glory Road',
+    year: 1963,
+    type: 'novel',
+    summary: 'A Vietnam veteran is recruited for a quest through alternate universes to recover a magical artifact.',
+    themes: ['Adventure', 'Fantasy', 'Heroism', 'Parallel Universes'],
+    wordCount: 85000,
+    characters: [
+      { name: 'Evelyn Cyril "E.C." Gordon (Oscar)', description: 'Veteran recruited for quest' },
+      { name: 'Star', description: 'Beautiful warrior woman and empress' },
+      { name: 'Rufo', description: 'Star\'s companion and mentor' }
+    ]
+  },
+  {
+    id: 'orphans-of-the-sky',
+    title: 'Orphans of the Sky',
+    year: 1963,
+    type: 'novel',
+    summary: 'Inhabitants of a generation ship have forgotten their mission. A young man discovers the truth about their vessel. Fix-up of "Universe" and "Common Sense" novellas.',
+    themes: ['Generation Ships', 'Lost Knowledge', 'Exploration', 'Religion'],
+    wordCount: 45000,
+    characters: [
+      { name: 'Hugh Hoyland', description: 'Crew member who discovers the truth about the ship' },
+      { name: 'Joe-Jim', description: 'Two-headed mutant who helps Hugh' }
+    ]
+  },
+  {
+    id: 'farnhams-freehold',
+    title: 'Farnham\'s Freehold',
+    year: 1964,
+    type: 'novel',
+    summary: 'A family survives nuclear war only to be transported to a future where racial roles are reversed.',
+    themes: ['Nuclear War', 'Survival', 'Racism', 'Time Travel'],
+    wordCount: 95000,
+    characters: [
+      { name: 'Hugh Farnham', description: 'Patriarch preparing for nuclear war' },
+      { name: 'Barbara Farnham', description: 'Hugh\'s wife' }
     ]
   },
   {
