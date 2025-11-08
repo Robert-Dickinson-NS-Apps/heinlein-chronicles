@@ -20,6 +20,29 @@ import fridayCover from '@/assets/covers/friday.jpg';
 import podkayneCover from '@/assets/covers/podkayne-mars.jpg';
 import gloryRoadCover from '@/assets/covers/glory-road.jpg';
 import numberBeastCover from '@/assets/covers/number-beast.jpg';
+
+// Short story covers
+import lifeLineCover from '@/assets/covers/life-line.jpg';
+import misfitCover from '@/assets/covers/misfit.jpg';
+import requiemCover from '@/assets/covers/requiem.jpg';
+import ifThisGoesOnCover from '@/assets/covers/if-this-goes-on.jpg';
+import roadsMustRollCover from '@/assets/covers/roads-must-roll.jpg';
+import coventryCover from '@/assets/covers/coventry.jpg';
+import blowupsHappenCover from '@/assets/covers/blowups-happen.jpg';
+import magicIncCover from '@/assets/covers/magic-inc.jpg';
+import crookedHouseCover from '@/assets/covers/crooked-house.jpg';
+import commonSenseCover from '@/assets/covers/common-sense.jpg';
+import greenHillsEarthCover from '@/assets/covers/green-hills-earth.jpg';
+import delilahSpaceRiggerCover from '@/assets/covers/delilah-space-rigger.jpg';
+import manWhoSoldMoonCover from '@/assets/covers/man-who-sold-moon.jpg';
+import waldoCover from '@/assets/covers/waldo.jpg';
+import allYouZombiesCover from '@/assets/covers/all-you-zombies.jpg';
+import universeCover from '@/assets/covers/universe.jpg';
+import byHisBootstrapsCover from '@/assets/covers/by-his-bootstraps.jpg';
+import unpleasantProfessionCover from '@/assets/covers/unpleasant-profession.jpg';
+import jerryWasManCover from '@/assets/covers/jerry-was-man.jpg';
+import longWatchCover from '@/assets/covers/long-watch.jpg';
+
 import { additionalShortStories } from './heinleinShortStories';
 
 export interface Character {
@@ -537,6 +560,36 @@ export const heinleinWorks: Work[] = [
   }
 ];
 
+// Map cover images to short stories
+const shortStoryCovers: Record<string, string> = {
+  'life-line': lifeLineCover,
+  'misfit': misfitCover,
+  'requiem': requiemCover,
+  'if-this-goes-on': ifThisGoesOnCover,
+  'roads-must-roll': roadsMustRollCover,
+  'coventry': coventryCover,
+  'blowups-happen': blowupsHappenCover,
+  'magic-inc': magicIncCover,
+  'crooked-house': crookedHouseCover,
+  'common-sense': commonSenseCover,
+  'green-hills-of-earth': greenHillsEarthCover,
+  'delilah-space-rigger': delilahSpaceRiggerCover,
+  'man-who-sold-moon': manWhoSoldMoonCover,
+  'waldo': waldoCover,
+  'all-you-zombies': allYouZombiesCover,
+  'universe': universeCover,
+  'by-his-bootstraps': byHisBootstrapsCover,
+  'unpleasant-profession-jonathan-hoag': unpleasantProfessionCover,
+  'jerry-was-a-man': jerryWasManCover,
+  'long-watch': longWatchCover,
+};
+
+// Add cover images to short stories
+const shortStoriesWithCovers = additionalShortStories.map(story => ({
+  ...story,
+  coverImage: shortStoryCovers[story.id]
+}));
+
 // Merge additional short stories with main works
-export const allWorks = [...heinleinWorks, ...additionalShortStories].sort((a, b) => a.year - b.year);
+export const allWorks = [...heinleinWorks, ...shortStoriesWithCovers].sort((a, b) => a.year - b.year);
 
