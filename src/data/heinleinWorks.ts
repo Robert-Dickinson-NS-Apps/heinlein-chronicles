@@ -70,6 +70,8 @@ import yearOfJackpotCover from '@/assets/covers/year-of-jackpot.jpg';
 import pandorasBoxCover from '@/assets/covers/pandoras-box.jpg';
 import freightHandlerCover from '@/assets/covers/freight-handler.jpg';
 import freeMenCover from '@/assets/covers/free-men.jpg';
+import poorDaddyCover from '@/assets/covers/poor-daddy.jpg';
+import tenderfootInSpaceCover from '@/assets/covers/tenderfoot-in-space.jpg';
 
 import { additionalShortStories } from './heinleinShortStories';
 
@@ -634,10 +636,12 @@ const shortStoryCovers: Record<string, string> = {
   'destination-moon': destinationMoonCover,
   'project-nightmare': projectNightmareCover,
   'sky-lift': skyLiftCover,
-  'year-of-jackpot': yearOfJackpotCover,
+  'year-of-the-jackpot': yearOfJackpotCover,
   'pandoras-box': pandorasBoxCover,
   'freight-handler': freightHandlerCover,
   'free-men': freeMenCover,
+  'poor-daddy': poorDaddyCover,
+  'tenderfoot-in-space': tenderfootInSpaceCover,
 };
 
 // Add cover images to short stories
