@@ -1,3 +1,12 @@
+import strangerCover from '@/assets/covers/stranger-in-strange-land.jpg';
+import moonCover from '@/assets/covers/moon-harsh-mistress.jpg';
+import starshipCover from '@/assets/covers/starship-troopers.jpg';
+import doubleStarCover from '@/assets/covers/double-star.jpg';
+import doorCover from '@/assets/covers/door-into-summer.jpg';
+import timeCover from '@/assets/covers/time-enough-love.jpg';
+import puppetCover from '@/assets/covers/puppet-masters.jpg';
+import citizenCover from '@/assets/covers/citizen-galaxy.jpg';
+
 export interface Character {
   name: string;
   description: string;
@@ -156,6 +165,7 @@ export const heinleinWorks: Work[] = [
     year: 1951,
     type: 'novel',
     summary: 'Alien parasites that attach to human hosts and control their minds secretly invade Earth. A secret agent and his team race to stop the invasion before humanity loses its free will.',
+    coverImage: puppetCover,
     characters: [
       { name: 'Sam Cavanaugh', description: 'Secret service agent, protagonist fighting the alien invasion' },
       { name: 'The Old Man', description: 'Sam\'s superior, head of a secret government agency' },
@@ -211,6 +221,7 @@ export const heinleinWorks: Work[] = [
     year: 1956,
     type: 'novel',
     summary: 'An out-of-work actor is hired to impersonate a kidnapped politician. The role becomes permanent, forcing him to become the leader he only pretended to be.',
+    coverImage: doubleStarCover,
     characters: [
       { name: 'Lawrence Smith (Lorenzo Smythe)', description: 'Unemployed actor who must impersonate a political leader' },
       { name: 'John Joseph Bonforte', description: 'Prominent politician who is kidnapped' },
@@ -224,6 +235,7 @@ export const heinleinWorks: Work[] = [
     year: 1957,
     type: 'novel',
     summary: 'An engineer betrayed by his business partner and fiancée uses suspended animation to travel to the future, then discovers time travel, allowing him to change his past.',
+    coverImage: doorCover,
     characters: [
       { name: 'Daniel Boone Davis', description: 'Inventor and engineer who travels through time' },
       { name: 'Miles Gentry', description: 'Dan\'s treacherous business partner' },
@@ -238,6 +250,7 @@ export const heinleinWorks: Work[] = [
     year: 1957,
     type: 'novel',
     summary: 'A slave boy is freed by a beggar who is secretly a powerful agent. After his mentor\'s death, he discovers his true identity and must confront an interstellar slave trade.',
+    coverImage: citizenCover,
     characters: [
       { name: 'Thorby Baslim', description: 'Former slave who discovers he is heir to a powerful corporation' },
       { name: 'Baslim the Cripple', description: 'Beggar who is actually a secret agent, adopts Thorby' },
@@ -277,6 +290,7 @@ export const heinleinWorks: Work[] = [
     year: 1959,
     type: 'novel',
     summary: 'In a future where citizenship is earned through military service, a young soldier rises through the ranks of the Mobile Infantry while humanity wages war against insectoid aliens.',
+    coverImage: starshipCover,
     characters: [
       { name: 'Juan "Johnnie" Rico', description: 'Filipino soldier who joins Mobile Infantry and rises to command' },
       { name: 'Sergeant Zim', description: 'Tough training instructor who later serves under Rico' },
@@ -291,6 +305,7 @@ export const heinleinWorks: Work[] = [
     year: 1961,
     type: 'novel',
     summary: 'A human raised by Martians returns to Earth as an adult, bringing Martian philosophy and abilities. His presence catalyzes a cultural revolution questioning sexuality, religion, and society.',
+    coverImage: strangerCover,
     characters: [
       { name: 'Valentine Michael Smith', description: 'Human raised on Mars with supernatural abilities and alien perspective' },
       { name: 'Jubal Harshaw', description: 'Cynical but wise writer and doctor who becomes Mike\'s mentor' },
@@ -344,6 +359,7 @@ export const heinleinWorks: Work[] = [
     year: 1966,
     type: 'novel',
     summary: 'A supercomputer, a one-armed computer technician, a political activist, and a revolutionary professor lead a rebellion to free the Moon from Earth\'s colonial rule.',
+    coverImage: moonCover,
     characters: [
       { name: 'Manuel Garcia "Mannie" O\'Kelly-Davis', description: 'Computer technician and first friend of Mike the AI' },
       { name: 'Mike (Mycroft)', description: 'Self-aware supercomputer who joins the revolution' },
@@ -370,6 +386,7 @@ export const heinleinWorks: Work[] = [
     year: 1973,
     type: 'novel',
     summary: 'Lazarus Long, the oldest living human, recounts his life experiences across centuries and planets, exploring themes of love, family, and the meaning of life.',
+    coverImage: timeCover,
     characters: [
       { name: 'Lazarus Long', description: 'Immortal protagonist, born Woodrow Wilson Smith in 1912' },
       { name: 'Dora Brandon Long', description: 'One of Lazarus\'s wives' },

@@ -1,13 +1,28 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { heinleinWorks, Work } from '@/data/heinleinWorks';
 import { WorkCard } from '@/components/WorkCard';
 import { WorkDetail } from '@/components/WorkDetail';
 import { FilterBar } from '@/components/FilterBar';
+import { Button } from '@/components/ui/button';
+import { Users } from 'lucide-react';
 
 const Index = () => {
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [filterType, setFilterType] = useState<'all' | 'novel' | 'short-story' | 'novella'>('all');
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+
+  useEffect(() => {
+    const workId = searchParams.get('work');
+    if (workId) {
+      const work = heinleinWorks.find(w => w.id === workId);
+      if (work) {
+        setSelectedWork(work);
+      }
+    }
+  }, [searchParams]);
 
   const filteredWorks = useMemo(() => {
     return heinleinWorks
@@ -24,12 +39,24 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <header className="border-b border-border bg-card shadow-sm">
         <div className="container mx-auto px-4 py-8">
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-2">
-            Robert A. Heinlein
-          </h1>
-          <p className="text-lg text-muted-foreground">
-            Complete Works Archive • Novels & Short Stories
-          </p>
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-4">
+            <div>
+              <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-2">
+                Robert A. Heinlein
+              </h1>
+              <p className="text-lg text-muted-foreground">
+                Complete Works Archive • Novels & Short Stories
+              </p>
+            </div>
+            <Button
+              onClick={() => navigate('/characters')}
+              variant="outline"
+              className="whitespace-nowrap"
+            >
+              <Users className="mr-2 h-4 w-4" />
+              Character Database
+            </Button>
+          </div>
         </div>
       </header>
 
