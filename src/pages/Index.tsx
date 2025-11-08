@@ -1,11 +1,11 @@
 import { useState, useMemo, useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { heinleinWorks, Work } from '@/data/heinleinWorks';
+import { allWorks, Work } from '@/data/heinleinWorks';
 import { WorkCard } from '@/components/WorkCard';
 import { WorkDetail } from '@/components/WorkDetail';
 import { FilterBar } from '@/components/FilterBar';
 import { Button } from '@/components/ui/button';
-import { Users } from 'lucide-react';
+import { Users, User, Lightbulb, BarChart3 } from 'lucide-react';
 
 const Index = () => {
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
@@ -17,7 +17,7 @@ const Index = () => {
   useEffect(() => {
     const workId = searchParams.get('work');
     if (workId) {
-      const work = heinleinWorks.find(w => w.id === workId);
+      const work = allWorks.find(w => w.id === workId);
       if (work) {
         setSelectedWork(work);
       }
@@ -25,7 +25,7 @@ const Index = () => {
   }, [searchParams]);
 
   const filteredWorks = useMemo(() => {
-    return heinleinWorks
+    return allWorks
       .filter(work => {
         const matchesSearch = work.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                             work.summary.toLowerCase().includes(searchQuery.toLowerCase());
@@ -39,7 +39,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <header className="border-b border-border bg-card shadow-sm">
         <div className="container mx-auto px-4 py-8">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-4">
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 mb-4">
             <div>
               <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-2">
                 Robert A. Heinlein
@@ -48,14 +48,40 @@ const Index = () => {
                 Complete Works Archive • Novels & Short Stories
               </p>
             </div>
-            <Button
-              onClick={() => navigate('/characters')}
-              variant="outline"
-              className="whitespace-nowrap"
-            >
-              <Users className="mr-2 h-4 w-4" />
-              Character Database
-            </Button>
+            <div className="flex flex-wrap gap-2">
+              <Button
+                onClick={() => navigate('/biography')}
+                variant="outline"
+                size="sm"
+              >
+                <User className="mr-2 h-4 w-4" />
+                Biography
+              </Button>
+              <Button
+                onClick={() => navigate('/characters')}
+                variant="outline"
+                size="sm"
+              >
+                <Users className="mr-2 h-4 w-4" />
+                Characters
+              </Button>
+              <Button
+                onClick={() => navigate('/themes')}
+                variant="outline"
+                size="sm"
+              >
+                <Lightbulb className="mr-2 h-4 w-4" />
+                Themes
+              </Button>
+              <Button
+                onClick={() => navigate('/statistics')}
+                variant="outline"
+                size="sm"
+              >
+                <BarChart3 className="mr-2 h-4 w-4" />
+                Statistics
+              </Button>
+            </div>
           </div>
         </div>
       </header>

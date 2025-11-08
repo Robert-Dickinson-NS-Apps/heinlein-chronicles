@@ -6,6 +6,7 @@ import doorCover from '@/assets/covers/door-into-summer.jpg';
 import timeCover from '@/assets/covers/time-enough-love.jpg';
 import puppetCover from '@/assets/covers/puppet-masters.jpg';
 import citizenCover from '@/assets/covers/citizen-galaxy.jpg';
+import { additionalShortStories } from './heinleinShortStories';
 
 export interface Character {
   name: string;
@@ -20,6 +21,8 @@ export interface Work {
   summary: string;
   characters: Character[];
   coverImage?: string;
+  themes?: string[];
+  wordCount?: number;
 }
 
 export const heinleinWorks: Work[] = [
@@ -29,6 +32,8 @@ export const heinleinWorks: Work[] = [
     year: 1939,
     type: 'short-story',
     summary: 'A scientist invents a device that can predict the exact moment of a person\'s death, threatening the insurance industry and leading to dangerous consequences.',
+    themes: ['Technology', 'Corporate Power', 'Science vs Business'],
+    wordCount: 7000,
     characters: [
       { name: 'Dr. Pinero', description: 'Brilliant but eccentric scientist who invents the life-prediction device' },
       { name: 'Weems', description: 'Insurance company executive who sees Pinero as a threat' }
@@ -40,6 +45,8 @@ export const heinleinWorks: Work[] = [
     year: 1939,
     type: 'short-story',
     summary: 'A young man with extraordinary mathematical abilities joins the Cosmic Construction Corps and proves his worth during a dangerous asteroid engineering mission.',
+    themes: ['Space Colonization', 'Individual Potential', 'Engineering'],
+    wordCount: 6500,
     characters: [
       { name: 'Andrew Jackson Libby', description: 'Mathematical genius with an intuitive understanding of physics and ballistics' },
       { name: 'Captain Doyle', description: 'Commander of the construction crew' }
@@ -51,9 +58,75 @@ export const heinleinWorks: Work[] = [
     year: 1940,
     type: 'short-story',
     summary: 'An aging tycoon who funded the first Moon landing is denied the chance to go himself. In his final days, he makes one last desperate attempt to reach the Moon.',
+    themes: ['Dreams and Ambition', 'Space Exploration', 'Mortality'],
+    wordCount: 4000,
     characters: [
       { name: 'D.D. Harriman', description: 'Wealthy entrepreneur and visionary who dreams of reaching the Moon' },
       { name: 'The Salesman', description: 'Opportunistic individual who helps Harriman achieve his dream' }
+    ]
+  },
+  {
+    id: 'roads-must-roll',
+    title: 'The Roads Must Roll',
+    year: 1940,
+    type: 'short-story',
+    summary: 'In a future where society depends on moving roadways, a labor strike by the road engineers threatens to bring civilization to a halt.',
+    themes: ['Technology Dependence', 'Labor Rights', 'Infrastructure'],
+    wordCount: 15000,
+    characters: [
+      { name: 'Larry Gaines', description: 'Chief engineer who must stop the strike and save the roads' },
+      { name: 'Shorty Van Kleeck', description: 'Leader of the striking workers' }
+    ]
+  },
+  {
+    id: 'blowups-happen',
+    title: 'Blowups Happen',
+    year: 1940,
+    type: 'short-story',
+    summary: 'Engineers running a nuclear power plant face psychological pressure as they worry about a catastrophic meltdown.',
+    themes: ['Nuclear Power', 'Psychological Stress', 'Technology Safety'],
+    wordCount: 18000,
+    characters: [
+      { name: 'Dr. Silard', description: 'Psychiatrist monitoring the mental health of plant operators' },
+      { name: 'Superintendent King', description: 'Plant administrator dealing with the pressure' }
+    ]
+  },
+  {
+    id: 'solution-unsatisfactory',
+    title: 'Solution Unsatisfactory',
+    year: 1941,
+    type: 'short-story',
+    summary: 'America develops radioactive dust as a weapon during WWII, leading to a world where one nation must police all others to prevent nuclear war.',
+    themes: ['Nuclear Weapons', 'World Government', 'Moral Dilemmas'],
+    wordCount: 16000,
+    characters: [
+      { name: 'Colonel Manning', description: 'Military officer overseeing the radioactive dust project' },
+      { name: 'John C. Esterhazy', description: 'Narrator and Manning\'s assistant' }
+    ]
+  },
+  {
+    id: 'universe',
+    title: 'Universe',
+    year: 1941,
+    type: 'novella',
+    summary: 'Generations aboard a massive generation ship have forgotten they\'re on a vessel, believing the ship is the entire universe.',
+    themes: ['Generation Ships', 'Lost Knowledge', 'Religion vs Science'],
+    wordCount: 25000,
+    characters: [
+      { name: 'Hugh Hoyland', description: 'Young crew member who discovers the truth about the ship' },
+      { name: 'Joe-Jim Gregory', description: 'Two-headed mutant who helps Hugh' }
+    ]
+  },
+  {
+    id: 'by-his-bootstraps',
+    title: 'By His Bootstraps',
+    year: 1941,
+    type: 'short-story',
+    summary: 'A man encounters multiple versions of himself through time travel, creating a complex temporal paradox.',
+    themes: ['Time Travel', 'Paradoxes', 'Self-Reliance'],
+    wordCount: 15000,
+    characters: [
+      { name: 'Bob Wilson', description: 'Graduate student caught in a time loop with himself' }
     ]
   },
   {
@@ -62,6 +135,8 @@ export const heinleinWorks: Work[] = [
     year: 1940,
     type: 'novella',
     summary: 'In a theocratic America ruled by a fundamentalist Prophet, a young officer in the elite guard joins a rebellion after falling in love with one of the Prophet\'s Virgins.',
+    themes: ['Theocracy', 'Revolution', 'Individual Freedom'],
+    wordCount: 60000,
     characters: [
       { name: 'John Lyle', description: 'Lieutenant in the Prophet\'s elite Angels of the Lord, becomes a revolutionary' },
       { name: 'Sister Judith', description: 'One of the Prophet\'s Virgin attendants who inspires John\'s awakening' },
@@ -74,6 +149,8 @@ export const heinleinWorks: Work[] = [
     year: 1947,
     type: 'novel',
     summary: 'Three teenage boys and a scientist travel to the Moon in a privately built rocket ship, where they discover evidence of Nazi survivors plotting a new war.',
+    themes: ['Space Exploration', 'Adventure', 'Youth Empowerment'],
+    wordCount: 60000,
     characters: [
       { name: 'Ross Jenkins', description: 'Intelligent and determined teenager, natural leader of the group' },
       { name: 'Art Mueller', description: 'Ross\'s friend, skilled in engineering and practical matters' },
@@ -460,3 +537,7 @@ export const heinleinWorks: Work[] = [
     ]
   }
 ];
+
+// Merge additional short stories with main works
+export const allWorks = [...heinleinWorks, ...additionalShortStories].sort((a, b) => a.year - b.year);
+

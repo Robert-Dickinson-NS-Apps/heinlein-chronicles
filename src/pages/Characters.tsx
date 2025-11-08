@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { heinleinWorks, Character } from '@/data/heinleinWorks';
+import { allWorks, Character } from '@/data/heinleinWorks';
 import { Input } from '@/components/ui/input';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -18,7 +18,7 @@ const Characters = () => {
   const allCharacters = useMemo(() => {
     const characterMap = new Map<string, CharacterWithWorks>();
 
-    heinleinWorks.forEach((work) => {
+    allWorks.forEach((work) => {
       work.characters.forEach((character) => {
         const existing = characterMap.get(character.name);
         if (existing) {
