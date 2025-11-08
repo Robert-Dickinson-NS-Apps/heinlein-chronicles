@@ -42,6 +42,26 @@ import byHisBootstrapsCover from '@/assets/covers/by-his-bootstraps.jpg';
 import unpleasantProfessionCover from '@/assets/covers/unpleasant-profession.jpg';
 import jerryWasManCover from '@/assets/covers/jerry-was-man.jpg';
 import longWatchCover from '@/assets/covers/long-watch.jpg';
+import solutionUnsatisfactoryCover from '@/assets/covers/solution-unsatisfactory.jpg';
+import theyCover from '@/assets/covers/they.jpg';
+import logicOfEmpireCover from '@/assets/covers/logic-of-empire.jpg';
+import goldfishBowlCover from '@/assets/covers/goldfish-bowl.jpg';
+import spaceJockeyCover from '@/assets/covers/space-jockey.jpg';
+import elsewhenCover from '@/assets/covers/elsewhen.jpg';
+import lostLegacyCover from '@/assets/covers/lost-legacy.jpg';
+import weAlsoWalkDogsCover from '@/assets/covers/we-also-walk-dogs.jpg';
+import itsGreatToBeBackCover from '@/assets/covers/its-great-to-be-back.jpg';
+import blackPitsLunaCover from '@/assets/covers/black-pits-luna.jpg';
+import gentlemenBeSeatedCover from '@/assets/covers/gentlemen-be-seated.jpg';
+import ordealInSpaceCover from '@/assets/covers/ordeal-in-space.jpg';
+import ourFairCityCover from '@/assets/covers/our-fair-city.jpg';
+import gulfCover from '@/assets/covers/gulf.jpg';
+import menaceFromEarthCover from '@/assets/covers/menace-from-earth.jpg';
+import columbusWasDopeCover from '@/assets/covers/columbus-was-dope.jpg';
+import searchlightCover from '@/assets/covers/searchlight.jpg';
+import myObjectAllSublimeCover from '@/assets/covers/my-object-all-sublime.jpg';
+import waterIsForWashingCover from '@/assets/covers/water-is-for-washing.jpg';
+import piedPiperCover from '@/assets/covers/pied-piper.jpg';
 
 import { additionalShortStories } from './heinleinShortStories';
 
@@ -582,6 +602,26 @@ const shortStoryCovers: Record<string, string> = {
   'unpleasant-profession-jonathan-hoag': unpleasantProfessionCover,
   'jerry-was-a-man': jerryWasManCover,
   'long-watch': longWatchCover,
+  'solution-unsatisfactory': solutionUnsatisfactoryCover,
+  'they': theyCover,
+  'logic-of-empire': logicOfEmpireCover,
+  'goldfish-bowl': goldfishBowlCover,
+  'space-jockey': spaceJockeyCover,
+  'elsewhen': elsewhenCover,
+  'lost-legacy': lostLegacyCover,
+  'we-also-walk-dogs': weAlsoWalkDogsCover,
+  'its-great-to-be-back': itsGreatToBeBackCover,
+  'black-pits-of-luna': blackPitsLunaCover,
+  'gentlemen-be-seated': gentlemenBeSeatedCover,
+  'ordeal-in-space': ordealInSpaceCover,
+  'our-fair-city': ourFairCityCover,
+  'gulf': gulfCover,
+  'menace-from-earth': menaceFromEarthCover,
+  'columbus-was-a-dope': columbusWasDopeCover,
+  'searchlight': searchlightCover,
+  'my-object-all-sublime': myObjectAllSublimeCover,
+  'water-is-for-washing': waterIsForWashingCover,
+  'pied-piper': piedPiperCover,
 };
 
 // Add cover images to short stories
