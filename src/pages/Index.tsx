@@ -5,7 +5,7 @@ import { WorkCard } from '@/components/WorkCard';
 import { WorkDetail } from '@/components/WorkDetail';
 import { FilterBar } from '@/components/FilterBar';
 import { Button } from '@/components/ui/button';
-import { Users, User, Lightbulb, BarChart3 } from 'lucide-react';
+import { Users, User, Lightbulb, BarChart3, FileCode } from 'lucide-react';
 
 const Index = () => {
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
@@ -80,6 +80,14 @@ const Index = () => {
               >
                 <BarChart3 className="mr-2 h-4 w-4" />
                 Statistics
+              </Button>
+              <Button
+                onClick={() => navigate('/documentation')}
+                variant="outline"
+                size="sm"
+              >
+                <FileCode className="mr-2 h-4 w-4" />
+                Docs
               </Button>
             </div>
           </div>
