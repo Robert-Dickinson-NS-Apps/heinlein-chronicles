@@ -20,6 +20,15 @@ import fridayCover from '@/assets/covers/friday.jpg';
 import podkayneCover from '@/assets/covers/podkayne-mars.jpg';
 import gloryRoadCover from '@/assets/covers/glory-road.jpg';
 import numberBeastCover from '@/assets/covers/number-beast.jpg';
+import timeForTheStarsCover from '@/assets/covers/time-for-the-stars.jpg';
+import haveSpaceSuitCover from '@/assets/covers/have-space-suit.jpg';
+import methuselahsChildrenCover from '@/assets/covers/methuselahs-children.jpg';
+import orphansOfTheSkyCover from '@/assets/covers/orphans-of-the-sky.jpg';
+import farnhamsFreeholdCover from '@/assets/covers/farnhams-freehold.jpg';
+import iWillFearNoEvilCover from '@/assets/covers/i-will-fear-no-evil.jpg';
+import jobComedyOfJusticeCover from '@/assets/covers/job-comedy-of-justice.jpg';
+import catWhoWalksCover from '@/assets/covers/cat-who-walks-through-walls.jpg';
+import toSailBeyondSunsetCover from '@/assets/covers/to-sail-beyond-sunset.jpg';
 
 // Short story covers
 import lifeLineCover from '@/assets/covers/life-line.jpg';
@@ -290,6 +299,7 @@ export const heinleinWorks: Work[] = [
     summary: 'Twin brothers with telepathic connection are separated when one joins a relativistic space mission, exploring time dilation.',
     themes: ['Time Travel', 'Space Exploration', 'Family', 'Communication'],
     wordCount: 65000,
+    coverImage: timeForTheStarsCover,
     characters: [
       { name: 'Thomas "Tom" Bartlett', description: 'Twin who goes on space mission' },
       { name: 'Patrick "Pat" Bartlett', description: 'Twin who stays on Earth' }
@@ -336,6 +346,7 @@ export const heinleinWorks: Work[] = [
     summary: 'A high school student wins a space suit in a contest, gets kidnapped by aliens, and finds himself defending humanity\'s right to survive before an intergalactic tribunal.',
     themes: ['Alien Contact', 'Coming of Age', 'Adventure', 'Individual Freedom'],
     wordCount: 65000,
+    coverImage: haveSpaceSuitCover,
     characters: [
       { name: 'Clifford "Kip" Russell', description: 'Resourceful teenager who wins a space suit and adventures beyond Earth' },
       { name: 'Patricia "Peewee"', description: 'Precocious young genius, daughter of a famous scientist' },
@@ -351,6 +362,7 @@ export const heinleinWorks: Work[] = [
     summary: 'Members of a long-lived human bloodline flee Earth in a stolen starship when the secret of their longevity is exposed and they face persecution from normal humans.',
     themes: ['Space Exploration', 'Individual Freedom', 'Immortality', 'Politics & Government'],
     wordCount: 65000,
+    coverImage: methuselahsChildrenCover,
     characters: [
       { name: 'Lazarus Long', description: 'Oldest member of the Howard Families, resourceful and cunning survivor' },
       { name: 'Andrew Jackson "Slipstick" Libby', description: 'Mathematical genius who developed the Libby Drive' },
@@ -412,6 +424,7 @@ export const heinleinWorks: Work[] = [
     summary: 'Inhabitants of a generation ship have forgotten their mission. A young man discovers the truth about their vessel. Fix-up of "Universe" and "Common Sense" novellas.',
     themes: ['Space Exploration', 'Society Building', 'Religion & Philosophy', 'Lost Knowledge'],
     wordCount: 45000,
+    coverImage: orphansOfTheSkyCover,
     characters: [
       { name: 'Hugh Hoyland', description: 'Crew member who discovers the truth about the ship' },
       { name: 'Joe-Jim Gregory', description: 'Two-headed mutant who helps Hugh' }
@@ -456,6 +469,7 @@ export const heinleinWorks: Work[] = [
     summary: 'A family survives a nuclear attack in their bomb shelter, only to find themselves thrown into a future where racial power dynamics are inverted and survival requires difficult choices.',
     themes: ['Military & War', 'Survival', 'Race Relations', 'Time Travel'],
     wordCount: 95000,
+    coverImage: farnhamsFreeholdCover,
     characters: [
       { name: 'Hugh Farnham', description: 'Survivalist patriarch trying to protect his family' },
       { name: 'Grace Farnham', description: 'Hugh\'s wife, struggling with their situation' },
@@ -488,6 +502,7 @@ export const heinleinWorks: Work[] = [
     summary: 'A dying elderly billionaire has his brain transplanted into a young woman\'s body, leading to explorations of identity, gender, sexuality, and consciousness.',
     themes: ['Gender & Identity', 'AI & Technology', 'Consciousness', 'Individual Freedom'],
     wordCount: 145000,
+    coverImage: iWillFearNoEvilCover,
     characters: [
       { name: 'Johann Sebastian Bach Smith', description: 'Elderly billionaire whose brain is transplanted' },
       { name: 'Joan Eunice Smith', description: 'New identity after brain transplant into Eunice\'s body' },
@@ -553,6 +568,7 @@ export const heinleinWorks: Work[] = [
     summary: 'A fundamentalist Christian minister repeatedly shifts between alternate realities, losing everything. With his pagan lover, he discovers the truth about gods, devils, and the nature of existence.',
     themes: ['Religion & Philosophy', 'Parallel Universes', 'Individual Freedom', 'Romance'],
     wordCount: 100000,
+    coverImage: jobComedyOfJusticeCover,
     characters: [
       { name: 'Alex Hergensheimer', description: 'Minister who loses his faith and finds true love' },
       { name: 'Alec Graham', description: 'Alex\'s name in another reality' },
@@ -567,6 +583,7 @@ export const heinleinWorks: Work[] = [
     summary: 'A retired military officer living on a space station is drawn into a complex conspiracy involving time travel, artificial intelligence, and characters from other Heinlein novels.',
     themes: ['Time Travel', 'AI & Technology', 'Conspiracy', 'Metafiction'],
     wordCount: 110000,
+    coverImage: catWhoWalksCover,
     characters: [
       { name: 'Richard Ames', description: 'Retired colonel and writer, also known as Colin Campbell' },
       { name: 'Gwendolyn Novak', description: 'Mysterious woman, revealed to be Hazel Meade Stone' },
@@ -581,6 +598,7 @@ export const heinleinWorks: Work[] = [
     summary: 'The autobiography of Maureen Johnson, mother of Lazarus Long, exploring her life, loves, and adventures across time and space in Heinlein\'s multiverse.',
     themes: ['Time Travel', 'Family', 'Individual Freedom', 'Immortality'],
     wordCount: 140000,
+    coverImage: toSailBeyondSunsetCover,
     characters: [
       { name: 'Maureen Johnson Smith Long', description: 'Matriarch of the Long family, mother of Lazarus Long' },
       { name: 'Brian Smith', description: 'Maureen\'s husband' },
