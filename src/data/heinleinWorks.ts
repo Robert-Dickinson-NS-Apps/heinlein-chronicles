@@ -62,6 +62,14 @@ import searchlightCover from '@/assets/covers/searchlight.jpg';
 import myObjectAllSublimeCover from '@/assets/covers/my-object-all-sublime.jpg';
 import waterIsForWashingCover from '@/assets/covers/water-is-for-washing.jpg';
 import piedPiperCover from '@/assets/covers/pied-piper.jpg';
+import nothingEverHappensMoonCover from '@/assets/covers/nothing-ever-happens-moon.jpg';
+import destinationMoonCover from '@/assets/covers/destination-moon.jpg';
+import projectNightmareCover from '@/assets/covers/project-nightmare.jpg';
+import skyLiftCover from '@/assets/covers/sky-lift.jpg';
+import yearOfJackpotCover from '@/assets/covers/year-of-jackpot.jpg';
+import pandorasBoxCover from '@/assets/covers/pandoras-box.jpg';
+import freightHandlerCover from '@/assets/covers/freight-handler.jpg';
+import freeMenCover from '@/assets/covers/free-men.jpg';
 
 import { additionalShortStories } from './heinleinShortStories';
 
@@ -622,6 +630,14 @@ const shortStoryCovers: Record<string, string> = {
   'my-object-all-sublime': myObjectAllSublimeCover,
   'water-is-for-washing': waterIsForWashingCover,
   'pied-piper': piedPiperCover,
+  'nothing-ever-happens-on-moon': nothingEverHappensMoonCover,
+  'destination-moon': destinationMoonCover,
+  'project-nightmare': projectNightmareCover,
+  'sky-lift': skyLiftCover,
+  'year-of-jackpot': yearOfJackpotCover,
+  'pandoras-box': pandorasBoxCover,
+  'freight-handler': freightHandlerCover,
+  'free-men': freeMenCover,
 };
 
 // Add cover images to short stories
