@@ -328,33 +328,6 @@ export const heinleinWorks: Work[] = [
     ]
   },
   {
-    id: 'podkayne-of-mars',
-    title: 'Podkayne of Mars',
-    year: 1963,
-    type: 'novel',
-    summary: 'A teenage girl from Mars travels to Earth and Venus, documenting her adventures and dreams of becoming a starship captain.',
-    themes: ['Coming of Age', 'Adventure', 'Gender & Identity', 'Space Exploration'],
-    wordCount: 55000,
-    characters: [
-      { name: 'Podkayne Fries', description: 'Ambitious teenage girl from Mars' },
-      { name: 'Clark Fries', description: 'Podkayne\'s genius younger brother' }
-    ]
-  },
-  {
-    id: 'glory-road',
-    title: 'Glory Road',
-    year: 1963,
-    type: 'novel',
-    summary: 'A Vietnam veteran is recruited for a quest through alternate universes to recover a magical artifact.',
-    themes: ['Adventure', 'Parallel Universes', 'Heroism', 'Romance'],
-    wordCount: 85000,
-    characters: [
-      { name: 'Evelyn Cyril "E.C." Gordon (Oscar)', description: 'Veteran recruited for quest' },
-      { name: 'Star', description: 'Beautiful warrior woman and empress' },
-      { name: 'Rufo', description: 'Star\'s companion and mentor' }
-    ]
-  },
-  {
     id: 'orphans-of-the-sky',
     title: 'Orphans of the Sky',
     year: 1963,
@@ -365,19 +338,6 @@ export const heinleinWorks: Work[] = [
     characters: [
       { name: 'Hugh Hoyland', description: 'Crew member who discovers the truth about the ship' },
       { name: 'Joe-Jim Gregory', description: 'Two-headed mutant who helps Hugh' }
-    ]
-  },
-  {
-    id: 'farnhams-freehold',
-    title: 'Farnham\'s Freehold',
-    year: 1964,
-    type: 'novel',
-    summary: 'A family survives nuclear war only to be transported to a future where racial roles are reversed.',
-    themes: ['Military & War', 'Survival', 'Race Relations', 'Time Travel'],
-    wordCount: 95000,
-    characters: [
-      { name: 'Hugh Farnham', description: 'Patriarch preparing for nuclear war' },
-      { name: 'Barbara Farnham', description: 'Hugh\'s wife' }
     ]
   },
   {
