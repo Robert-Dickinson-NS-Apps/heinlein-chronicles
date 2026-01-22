@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { CodeBlock } from '@/components/CodeBlock';
 import { ArrowLeft, Code, FileCode, Database, Layout, Search, FolderOpen, BarChart3, Palette, Filter, Layers } from 'lucide-react';
 
 interface SourceFile {
@@ -955,11 +956,12 @@ const Documentation = () => {
               </div>
               <p className="text-sm text-muted-foreground mt-2">{currentFile.description}</p>
             </div>
-            <ScrollArea className="h-[600px]">
-              <pre className="p-6 text-sm leading-relaxed">
-                <code className="language-typescript text-foreground/90">{currentFile.code}</code>
-              </pre>
-            </ScrollArea>
+            <CodeBlock 
+              code={currentFile.code} 
+              language={currentFile.path.endsWith('.css') ? 'css' : 'tsx'}
+              showLineNumbers={true}
+              maxHeight="600px"
+            />
           </Card>
         </div>
 
