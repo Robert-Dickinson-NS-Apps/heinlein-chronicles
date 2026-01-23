@@ -4,7 +4,7 @@ import { allWorks } from '@/data/heinleinWorks';
 import { WorkCard } from '@/components/WorkCard';
 import { FilterBar } from '@/components/FilterBar';
 import { Button } from '@/components/ui/button';
-import { Users, User, Lightbulb, BarChart3, FileCode } from 'lucide-react';
+import { Users, User, Lightbulb, BarChart3, FileCode, Calendar } from 'lucide-react';
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -75,6 +75,14 @@ const Index = () => {
               >
                 <BarChart3 className="mr-2 h-4 w-4" />
                 Statistics
+              </Button>
+              <Button
+                onClick={() => navigate('/timeline')}
+                variant="outline"
+                size="sm"
+              >
+                <Calendar className="mr-2 h-4 w-4" />
+                Timeline
               </Button>
               <Button
                 onClick={() => navigate('/documentation')}
