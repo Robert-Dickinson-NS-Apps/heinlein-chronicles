@@ -3,6 +3,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { allWorks } from '@/data/heinleinWorks';
 import { WorkCard } from '@/components/WorkCard';
 import { FilterBar } from '@/components/FilterBar';
+import { OnThisDay } from '@/components/OnThisDay';
 import { Button } from '@/components/ui/button';
 import { Users, User, Lightbulb, BarChart3, FileCode, Calendar, BookMarked } from 'lucide-react';
 
@@ -106,6 +107,9 @@ const Index = () => {
       </header>
 
       <main className="container mx-auto px-4 py-8">
+        {/* On This Day */}
+        <OnThisDay />
+
         <FilterBar
           searchQuery={searchQuery}
           onSearchChange={setSearchQuery}
