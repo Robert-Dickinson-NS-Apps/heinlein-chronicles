@@ -4,7 +4,7 @@ import { allWorks } from '@/data/heinleinWorks';
 import { WorkCard } from '@/components/WorkCard';
 import { FilterBar } from '@/components/FilterBar';
 import { Button } from '@/components/ui/button';
-import { Users, User, Lightbulb, BarChart3, FileCode, Calendar } from 'lucide-react';
+import { Users, User, Lightbulb, BarChart3, FileCode, Calendar, BookMarked } from 'lucide-react';
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -83,6 +83,14 @@ const Index = () => {
               >
                 <Calendar className="mr-2 h-4 w-4" />
                 Timeline
+              </Button>
+              <Button
+                onClick={() => navigate('/library')}
+                variant="outline"
+                size="sm"
+              >
+                <BookMarked className="mr-2 h-4 w-4" />
+                My List
               </Button>
               <Button
                 onClick={() => navigate('/documentation')}
