@@ -1,14 +1,12 @@
 import { useState, useMemo, useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { allWorks, Work } from '@/data/heinleinWorks';
+import { allWorks } from '@/data/heinleinWorks';
 import { WorkCard } from '@/components/WorkCard';
-import { WorkDetail } from '@/components/WorkDetail';
 import { FilterBar } from '@/components/FilterBar';
 import { Button } from '@/components/ui/button';
 import { Users, User, Lightbulb, BarChart3, FileCode } from 'lucide-react';
 
 const Index = () => {
-  const [selectedWork, setSelectedWork] = useState<Work | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [filterType, setFilterType] = useState<'all' | 'novel' | 'short-story' | 'novella'>('all');
   const navigate = useNavigate();
@@ -17,12 +15,9 @@ const Index = () => {
   useEffect(() => {
     const workId = searchParams.get('work');
     if (workId) {
-      const work = allWorks.find(w => w.id === workId);
-      if (work) {
-        setSelectedWork(work);
-      }
+      navigate(`/work/${workId}`, { replace: true });
     }
-  }, [searchParams]);
+  }, [searchParams, navigate]);
 
   const filteredWorks = useMemo(() => {
     return allWorks
@@ -114,7 +109,7 @@ const Index = () => {
             <WorkCard
               key={work.id}
               work={work}
-              onClick={() => setSelectedWork(work)}
+              onClick={() => navigate(`/work/${work.id}`)}
             />
           ))}
         </div>
@@ -125,12 +120,6 @@ const Index = () => {
           </div>
         )}
       </main>
-
-      <WorkDetail
-        work={selectedWork}
-        open={!!selectedWork}
-        onOpenChange={(open) => !open && setSelectedWork(null)}
-      />
     </div>
   );
 };
