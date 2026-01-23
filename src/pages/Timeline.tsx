@@ -28,7 +28,11 @@ import {
   BookOpen, 
   ChevronDown,
   ChevronUp,
-  X
+  X,
+  FileText,
+  TrendingUp,
+  Star,
+  Sparkles
 } from 'lucide-react';
 
 // Award-winning works
@@ -99,6 +103,38 @@ const Timeline = () => {
     });
     return grouped;
   }, [filteredWorks]);
+
+  // Calculate decade statistics (based on all works, not filtered)
+  const decadeStats = useMemo(() => {
+    return decades.map(decade => {
+      const works = allWorks.filter(w => w.year >= decade.start && w.year <= decade.end);
+      const novels = works.filter(w => w.type === 'novel');
+      const shortStories = works.filter(w => w.type === 'short-story');
+      const novellas = works.filter(w => w.type === 'novella');
+      const totalWords = works.reduce((sum, w) => sum + (w.wordCount || 0), 0);
+      const awards = awardWinningWorks.filter(a => works.some(w => w.id === a.id));
+      
+      // Notable achievements per decade
+      let achievement = '';
+      if (decade.label === '1930s') achievement = 'Career begins';
+      else if (decade.label === '1940s') achievement = 'Golden Age peak';
+      else if (decade.label === '1950s') achievement = 'Juvenile classics';
+      else if (decade.label === '1960s') achievement = '3 Hugo Awards';
+      else if (decade.label === '1970s') achievement = 'Experimental era';
+      else if (decade.label === '1980s') achievement = 'Final masterworks';
+
+      return {
+        decade: decade.label,
+        totalWorks: works.length,
+        novels: novels.length,
+        shortStories: shortStories.length,
+        novellas: novellas.length,
+        wordCount: totalWords,
+        awards: awards.length,
+        achievement
+      };
+    }).filter(stat => stat.totalWorks > 0);
+  }, []);
 
   const clearFilters = () => {
     setSelectedSeries([]);
@@ -273,6 +309,57 @@ const Timeline = () => {
 
           {/* Timeline */}
           <main className="lg:col-span-3">
+            {/* Decade Statistics Cards */}
+            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3 mb-8">
+              {decadeStats.map((stat, idx) => (
+                <Card 
+                  key={stat.decade} 
+                  className="p-4 bg-gradient-to-br from-card to-muted/30 border-border/50 hover:border-primary/30 transition-colors"
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-lg font-bold text-primary">{stat.decade}</span>
+                    {stat.awards > 0 && (
+                      <Award className="h-4 w-4 text-yellow-500" />
+                    )}
+                  </div>
+                  
+                  <div className="space-y-1.5">
+                    <div className="flex items-center gap-2 text-sm">
+                      <FileText className="h-3.5 w-3.5 text-muted-foreground" />
+                      <span className="text-foreground font-medium">{stat.totalWorks}</span>
+                      <span className="text-muted-foreground text-xs">works</span>
+                    </div>
+                    
+                    <div className="flex items-center gap-2 text-sm">
+                      <TrendingUp className="h-3.5 w-3.5 text-muted-foreground" />
+                      <span className="text-foreground font-medium">
+                        {stat.wordCount > 0 ? `${(stat.wordCount / 1000000).toFixed(1)}M` : '—'}
+                      </span>
+                      <span className="text-muted-foreground text-xs">words</span>
+                    </div>
+                    
+                    <div className="flex items-center gap-2 text-xs text-muted-foreground pt-1 border-t border-border/50">
+                      <Sparkles className="h-3 w-3" />
+                      <span className="truncate">{stat.achievement}</span>
+                    </div>
+                  </div>
+                  
+                  {/* Work type breakdown */}
+                  <div className="flex gap-1 mt-3">
+                    {stat.novels > 0 && (
+                      <div className="flex-1 bg-primary/20 rounded-sm h-1.5" title={`${stat.novels} novels`} />
+                    )}
+                    {stat.novellas > 0 && (
+                      <div className="flex-1 bg-secondary/40 rounded-sm h-1.5" title={`${stat.novellas} novellas`} />
+                    )}
+                    {stat.shortStories > 0 && (
+                      <div className="flex-1 bg-muted-foreground/30 rounded-sm h-1.5" title={`${stat.shortStories} short stories`} />
+                    )}
+                  </div>
+                </Card>
+              ))}
+            </div>
+
             {Object.keys(worksByDecade).length === 0 ? (
               <div className="text-center py-12">
                 <p className="text-lg text-muted-foreground">No works match the selected filters.</p>
