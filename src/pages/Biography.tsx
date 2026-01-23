@@ -1,8 +1,9 @@
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ArrowLeft, Award, BookOpen, Star } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { ArrowLeft, Award, BookOpen, Star, Compass, Lightbulb, BookMarked, Rocket, Users, Brain, Swords, Heart } from 'lucide-react';
+import { useNavigate, Link } from 'react-router-dom';
+import { allWorks } from '@/data/heinleinWorks';
 
 const Biography = () => {
   const navigate = useNavigate();
@@ -58,6 +59,89 @@ const Biography = () => {
     },
   ];
 
+  const readingPathways = [
+    {
+      id: 'newcomers',
+      title: 'Best Starting Points',
+      icon: Compass,
+      description: 'New to Heinlein? Start here with his most accessible and acclaimed works.',
+      works: ['the-moon-is-a-harsh-mistress', 'the-door-into-summer', 'double-star', 'have-space-suit-will-travel'],
+      color: 'text-emerald-500'
+    },
+    {
+      id: 'young-adult',
+      title: 'Young Adult Adventures',
+      icon: Rocket,
+      description: 'The "Heinlein Juveniles" - thrilling space adventures with teenage protagonists.',
+      works: ['have-space-suit-will-travel', 'citizen-of-the-galaxy', 'tunnel-in-the-sky', 'starman-jones'],
+      color: 'text-blue-500'
+    },
+    {
+      id: 'philosophy',
+      title: 'Philosophical Deep Dives',
+      icon: Brain,
+      description: 'Explore complex ideas about society, religion, freedom, and human nature.',
+      works: ['stranger-in-a-strange-land', 'the-moon-is-a-harsh-mistress', 'time-enough-love', 'job-a-comedy-of-justice'],
+      color: 'text-purple-500'
+    },
+    {
+      id: 'military',
+      title: 'Military & Action',
+      icon: Swords,
+      description: 'Combat, duty, and honor in humanity\'s expansion across the stars.',
+      works: ['starship-troopers', 'the-puppet-masters', 'between-planets', 'space-cadet'],
+      color: 'text-red-500'
+    },
+    {
+      id: 'time-travel',
+      title: 'Time Travel Tales',
+      icon: BookMarked,
+      description: 'Mind-bending temporal paradoxes and journeys through time.',
+      works: ['the-door-into-summer', 'all-you-zombies', 'by-his-bootstraps', 'time-enough-love'],
+      color: 'text-amber-500'
+    },
+    {
+      id: 'romance',
+      title: 'Romance & Relationships',
+      icon: Heart,
+      description: 'Love stories set against extraordinary circumstances.',
+      works: ['the-door-into-summer', 'friday', 'glory-road', 'i-will-fear-no-evil'],
+      color: 'text-pink-500'
+    }
+  ];
+
+  const majorThemes = [
+    {
+      theme: 'Individual Freedom',
+      description: 'The paramount importance of personal liberty and self-determination against societal constraints.',
+      icon: '🗽'
+    },
+    {
+      theme: 'Competent Person',
+      description: '"A human being should be able to change a diaper, plan an invasion, butcher a hog, conn a ship..." - the ideal of human versatility.',
+      icon: '🛠️'
+    },
+    {
+      theme: 'Social Responsibility',
+      description: 'The tension between individual rights and duties to society, explored especially in military contexts.',
+      icon: '⚖️'
+    },
+    {
+      theme: 'Sexual Liberation',
+      description: 'Challenging conventional attitudes toward sex, marriage, and family structures.',
+      icon: '💫'
+    },
+    {
+      theme: 'Revolution & Reform',
+      description: 'When and how to resist unjust authority, from peaceful protest to armed rebellion.',
+      icon: '🔥'
+    },
+    {
+      theme: 'Human Potential',
+      description: 'Longevity, psychic powers, and the evolution of human capabilities beyond current limits.',
+      icon: '🧬'
+    }
+  ];
   return (
     <div className="min-h-screen bg-background">
       <header className="border-b border-border bg-card shadow-sm">
@@ -158,13 +242,143 @@ const Biography = () => {
           </div>
         </section>
 
+        {/* Major Themes Section */}
+        <section>
+          <h2 className="font-serif text-3xl font-bold text-foreground mb-6 flex items-center gap-2">
+            <Lightbulb className="h-8 w-8 text-primary" />
+            Major Themes in His Work
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {majorThemes.map((item, index) => (
+              <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-3xl">{item.icon}</span>
+                  <div>
+                    <h3 className="font-serif text-lg font-bold text-foreground mb-2">
+                      {item.theme}
+                    </h3>
+                    <p className="text-sm text-foreground/70 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        {/* Reading Pathways Section */}
+        <section>
+          <h2 className="font-serif text-3xl font-bold text-foreground mb-3 flex items-center gap-2">
+            <Compass className="h-8 w-8 text-primary" />
+            Reading Pathways for Newcomers
+          </h2>
+          <p className="text-muted-foreground mb-8 max-w-3xl">
+            Not sure where to start? Choose a pathway based on your interests. Each path offers a curated selection of works that showcase different aspects of Heinlein's genius.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {readingPathways.map((pathway) => {
+              const PathwayIcon = pathway.icon;
+              const pathwayWorks = pathway.works
+                .map(id => allWorks.find(w => w.id === id))
+                .filter(Boolean);
+              
+              return (
+                <Card key={pathway.id} className="overflow-hidden hover:shadow-xl transition-shadow">
+                  <CardHeader className="pb-3">
+                    <CardTitle className="flex items-center gap-2">
+                      <PathwayIcon className={`h-5 w-5 ${pathway.color}`} />
+                      {pathway.title}
+                    </CardTitle>
+                    <p className="text-sm text-muted-foreground">{pathway.description}</p>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-3">
+                      {pathwayWorks.map((work, idx) => work && (
+                        <Link 
+                          key={work.id} 
+                          to={`/work/${work.id}`}
+                          className="flex items-center gap-3 p-2 rounded-lg hover:bg-muted/50 transition-colors group"
+                        >
+                          <span className="w-6 h-6 rounded-full bg-muted flex items-center justify-center text-xs font-medium text-muted-foreground">
+                            {idx + 1}
+                          </span>
+                          <div className="flex-1 min-w-0">
+                            <p className="font-medium text-sm text-foreground group-hover:text-primary transition-colors truncate">
+                              {work.title}
+                            </p>
+                            <p className="text-xs text-muted-foreground">{work.year}</p>
+                          </div>
+                          {work.coverImage && (
+                            <div className="w-8 h-12 rounded overflow-hidden flex-shrink-0">
+                              <img 
+                                src={work.coverImage} 
+                                alt={work.title}
+                                className="w-full h-full object-cover"
+                              />
+                            </div>
+                          )}
+                        </Link>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </section>
+
+        {/* Essential Reading Section */}
+        <section className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl p-8">
+          <h2 className="font-serif text-3xl font-bold text-foreground mb-6 flex items-center gap-2">
+            <BookMarked className="h-8 w-8 text-primary" />
+            The Essential Five
+          </h2>
+          <p className="text-muted-foreground mb-8 max-w-3xl">
+            If you only read five Heinlein books, these represent the breadth and depth of his work. Each won or was nominated for major awards and remains influential today.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+            {['the-moon-is-a-harsh-mistress', 'stranger-in-a-strange-land', 'starship-troopers', 'the-door-into-summer', 'double-star'].map((id, idx) => {
+              const work = allWorks.find(w => w.id === id);
+              if (!work) return null;
+              return (
+                <Link 
+                  key={id} 
+                  to={`/work/${id}`}
+                  className="group text-center"
+                >
+                  <div className="aspect-[2/3] bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg overflow-hidden mb-3 shadow-lg group-hover:shadow-xl transition-all group-hover:scale-105">
+                    {work.coverImage ? (
+                      <img 
+                        src={work.coverImage} 
+                        alt={work.title}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center p-4">
+                        <span className="font-serif text-sm text-foreground/60 text-center">
+                          {work.title}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                  <p className="font-medium text-sm text-foreground group-hover:text-primary transition-colors line-clamp-2">
+                    {work.title}
+                  </p>
+                  <p className="text-xs text-muted-foreground">{work.year}</p>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+
         {/* Legacy Section */}
         <section className="bg-muted/30 rounded-lg p-8">
           <h2 className="font-serif text-3xl font-bold text-foreground mb-4">
             Legacy
           </h2>
           <p className="text-foreground/80 leading-relaxed mb-4">
-            Heinlein\'s influence on science fiction cannot be overstated. He helped elevate the genre from pulp entertainment to serious literature, introducing complex themes and sophisticated storytelling. His works anticipated technological developments including water beds, mobile phones, and the internet.
+            Heinlein's influence on science fiction cannot be overstated. He helped elevate the genre from pulp entertainment to serious literature, introducing complex themes and sophisticated storytelling. His works anticipated technological developments including water beds, mobile phones, and the internet.
           </p>
           <p className="text-foreground/80 leading-relaxed">
             Beyond his technical predictions, Heinlein challenged readers to think critically about politics, religion, sexuality, and social structures. While some of his views were controversial even in his time, his willingness to explore difficult topics opened doors for future science fiction writers to tackle complex social issues.
