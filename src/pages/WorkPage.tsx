@@ -2,11 +2,15 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useMemo } from 'react';
 import { allWorks, Work } from '@/data/heinleinWorks';
 import { seriesData, publicationHistory, getSeriesForWork } from '@/data/seriesData';
+import { hasEditionData } from '@/data/editionCovers';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { CoverGallery } from '@/components/CoverGallery';
+import { ReadingStatusButton } from '@/components/ReadingStatusButton';
+import { useReadingList } from '@/hooks/useReadingList';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -32,11 +36,14 @@ import {
 const WorkPage = () => {
   const { workId } = useParams<{ workId: string }>();
   const navigate = useNavigate();
+  const { getStatus, setStatus } = useReadingList();
 
   const work = useMemo(() => 
     allWorks.find(w => w.id === workId),
     [workId]
   );
+  
+  const readingStatus = work ? getStatus(work.id) : null;
 
   const relatedByTheme = useMemo(() => {
     if (!work?.themes?.length) return [];
@@ -166,6 +173,14 @@ const WorkPage = () => {
                     {work.wordCount.toLocaleString()} words
                   </span>
                 )}
+              </div>
+              
+              {/* Reading Status Button */}
+              <div className="pt-2">
+                <ReadingStatusButton
+                  currentStatus={readingStatus}
+                  onStatusChange={(status) => setStatus(work.id, status)}
+                />
               </div>
             </div>
 
@@ -310,6 +325,13 @@ const WorkPage = () => {
                 </div>
               </CardContent>
             </Card>
+          </section>
+        )}
+
+        {/* Cover Gallery / Edition History */}
+        {hasEditionData(work.id) && (
+          <section className="mb-12">
+            <CoverGallery work={work} />
           </section>
         )}
 
