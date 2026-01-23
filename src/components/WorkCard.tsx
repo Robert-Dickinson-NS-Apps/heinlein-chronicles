@@ -1,6 +1,8 @@
 import { Work } from '@/data/heinleinWorks';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { useReadingList } from '@/hooks/useReadingList';
+import { ReadingStatusButton } from '@/components/ReadingStatusButton';
 
 interface WorkCardProps {
   work: Work;
@@ -8,12 +10,17 @@ interface WorkCardProps {
 }
 
 export const WorkCard = ({ work, onClick }: WorkCardProps) => {
+  const { getStatus, setStatus } = useReadingList();
+  const currentStatus = getStatus(work.id);
+
   return (
     <Card 
       className="group cursor-pointer overflow-hidden transition-all duration-300 hover:shadow-lg hover:scale-[1.02] bg-card border-border"
-      onClick={onClick}
     >
-      <div className="aspect-[2/3] bg-muted relative overflow-hidden">
+      <div 
+        className="aspect-[2/3] bg-muted relative overflow-hidden"
+        onClick={onClick}
+      >
         {work.coverImage ? (
           <img 
             src={work.coverImage} 
@@ -35,11 +42,21 @@ export const WorkCard = ({ work, onClick }: WorkCardProps) => {
         </div>
       </div>
       <div className="p-4">
-        <h3 className="font-serif text-lg font-bold mb-1 text-foreground group-hover:text-primary transition-colors">
+        <h3 
+          className="font-serif text-lg font-bold mb-1 text-foreground group-hover:text-primary transition-colors cursor-pointer"
+          onClick={onClick}
+        >
           {work.title}
         </h3>
         <p className="text-sm text-muted-foreground mb-2">{work.year}</p>
-        <p className="text-sm text-foreground/80 line-clamp-3">{work.summary}</p>
+        <p className="text-sm text-foreground/80 line-clamp-2 mb-3">{work.summary}</p>
+        <div onClick={(e) => e.stopPropagation()}>
+          <ReadingStatusButton
+            currentStatus={currentStatus}
+            onStatusChange={(status) => setStatus(work.id, status)}
+            variant="compact"
+          />
+        </div>
       </div>
     </Card>
   );

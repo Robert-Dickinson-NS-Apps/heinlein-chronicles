@@ -11,6 +11,7 @@ import Statistics from "./pages/Statistics";
 import Documentation from "./pages/Documentation";
 import WorkPage from "./pages/WorkPage";
 import Timeline from "./pages/Timeline";
+import Library from "./pages/Library";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/themes" element={<Themes />} />
           <Route path="/statistics" element={<Statistics />} />
           <Route path="/timeline" element={<Timeline />} />
+          <Route path="/library" element={<Library />} />
           <Route path="/documentation" element={<Documentation />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
