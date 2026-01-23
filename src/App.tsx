@@ -9,6 +9,7 @@ import Biography from "./pages/Biography";
 import Themes from "./pages/Themes";
 import Statistics from "./pages/Statistics";
 import Documentation from "./pages/Documentation";
+import WorkPage from "./pages/WorkPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,6 +22,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/work/:workId" element={<WorkPage />} />
           <Route path="/characters" element={<Characters />} />
           <Route path="/biography" element={<Biography />} />
           <Route path="/themes" element={<Themes />} />
