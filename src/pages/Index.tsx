@@ -5,7 +5,7 @@ import { WorkCard } from '@/components/WorkCard';
 import { FilterBar } from '@/components/FilterBar';
 import { OnThisDay } from '@/components/OnThisDay';
 import { Button } from '@/components/ui/button';
-import { Users, User, Lightbulb, BarChart3, FileCode, Calendar, BookMarked } from 'lucide-react';
+import { Users, User, Lightbulb, BarChart3, FileCode, Calendar, BookMarked, Rocket } from 'lucide-react';
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -84,6 +84,14 @@ const Index = () => {
               >
                 <Calendar className="mr-2 h-4 w-4" />
                 Timeline
+              </Button>
+              <Button
+                onClick={() => navigate('/future-history')}
+                variant="outline"
+                size="sm"
+              >
+                <Rocket className="mr-2 h-4 w-4" />
+                Future History
               </Button>
               <Button
                 onClick={() => navigate('/library')}
