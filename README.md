@@ -1,73 +1,44 @@
-# Welcome to your Lovable project
+# 🚀 Heinlein Chronicles
 
-## Project info
+![TypeScript](https://img.shields.io/badge/TypeScript-React-3178C6)
+![Vite](https://img.shields.io/badge/Build-Vite-646CFF)
+![Tailwind](https://img.shields.io/badge/Style-Tailwind-38BDF8)
+![shadcn/ui](https://img.shields.io/badge/UI-shadcn-000000)
 
-**URL**: https://lovable.dev/projects/0b93dfc9-3a47-4395-bd16-e7919759aef3
+An interactive web app exploring the **"Future History" timeline of science-fiction author Robert A. Heinlein** — browse the events, eras, and stories that make up his shared fictional chronology.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## About
 
-**Use Lovable**
+Heinlein Chronicles presents Robert A. Heinlein's celebrated **Future History** as an interactive timeline. It maps the key events, periods, and connected stories of Heinlein's shared universe into an explorable interface, making it easy to follow how his works fit together across the decades and centuries he imagined.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0b93dfc9-3a47-4395-bd16-e7919759aef3) and start prompting.
+A companion project for science-fiction fans and anyone curious about one of the genre's foundational world-building efforts.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Features
 
-**Use your preferred IDE**
+- 🗓️ Interactive Future History timeline
+- 📖 Events, eras, and connected stories
+- 🔍 Browse and explore Heinlein's fictional chronology
+- 🖥️ Clean, responsive interface
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Framework:** React + TypeScript
+- **Build tool:** Vite
+- **Styling:** Tailwind CSS + shadcn/ui
 
-Follow these steps:
+## Getting Started
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+git clone https://github.com/Robert-Dickinson-NS-Apps/heinlein-chronicles.git
+cd heinlein-chronicles
+bun install   # or npm install
+bun run dev   # or npm run dev
 ```
 
-**Edit a file directly in GitHub**
+> This project uses Bun (`bun.lockb`); npm also works. Check `package.json` for exact scripts.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## License
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0b93dfc9-3a47-4395-bd16-e7919759aef3) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Released under the **MIT License**.
